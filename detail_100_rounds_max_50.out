@@ -1,0 +1,4557 @@
+In field process: detected 1 people reach in the next round! And rank 0 wins and kicks the ball to: (65, 59)
+
+
+Round 0
+Ball's location: (64, 32) ==> (65, 59)
+
+Rank: 0
+Location: (59, 43) ==> (64, 32)
+Reached? 1
+Winned? 1
+Total Running: 16
+Reach Count: 1
+Win Count: 1
+
+Rank: 1
+Location: (119, 39) ==> (117, 32)
+Reached? 0
+Winned? 0
+Total Running: 9
+Reach Count: 0
+Win Count: 0
+
+Rank: 2
+Location: (36, 35) ==> (42, 32)
+Reached? 0
+Winned? 0
+Total Running: 9
+Reach Count: 0
+Win Count: 0
+
+Rank: 3
+Location: (117, 44) ==> (116, 41)
+Reached? 0
+Winned? 0
+Total Running: 4
+Reach Count: 0
+Win Count: 0
+
+Rank: 4
+Location: (29, 56) ==> (37, 32)
+Reached? 0
+Winned? 0
+Total Running: 32
+Reach Count: 0
+Win Count: 0
+
+In field process: detected 1 people reach in the next round! And rank 0 wins and kicks the ball to: (96, 30)
+
+
+Round 1
+Ball's location: (65, 59) ==> (96, 30)
+
+Rank: 0
+Location: (64, 32) ==> (65, 59)
+Reached? 1
+Winned? 1
+Total Running: 44
+Reach Count: 2
+Win Count: 2
+
+Rank: 1
+Location: (117, 32) ==> (101, 59)
+Reached? 0
+Winned? 0
+Total Running: 52
+Reach Count: 0
+Win Count: 0
+
+Rank: 2
+Location: (42, 32) ==> (65, 57)
+Reached? 0
+Winned? 0
+Total Running: 57
+Reach Count: 0
+Win Count: 0
+
+Rank: 3
+Location: (116, 41) ==> (104, 59)
+Reached? 0
+Winned? 0
+Total Running: 34
+Reach Count: 0
+Win Count: 0
+
+Rank: 4
+Location: (37, 32) ==> (44, 40)
+Reached? 0
+Winned? 0
+Total Running: 47
+Reach Count: 0
+Win Count: 0
+
+In field process: detected 1 people reach in the next round! And rank 1 wins and kicks the ball to: (126, 55)
+
+
+Round 2
+Ball's location: (96, 30) ==> (126, 55)
+
+Rank: 0
+Location: (65, 59) ==> (67, 59)
+Reached? 0
+Winned? 0
+Total Running: 46
+Reach Count: 2
+Win Count: 2
+
+Rank: 1
+Location: (101, 59) ==> (96, 30)
+Reached? 1
+Winned? 1
+Total Running: 86
+Reach Count: 1
+Win Count: 1
+
+Rank: 2
+Location: (65, 57) ==> (75, 42)
+Reached? 0
+Winned? 0
+Total Running: 82
+Reach Count: 0
+Win Count: 0
+
+Rank: 3
+Location: (104, 59) ==> (96, 33)
+Reached? 0
+Winned? 0
+Total Running: 68
+Reach Count: 0
+Win Count: 0
+
+Rank: 4
+Location: (44, 40) ==> (44, 38)
+Reached? 0
+Winned? 0
+Total Running: 49
+Reach Count: 0
+Win Count: 0
+
+
+
+Round 3
+Ball's location: (126, 55) ==> (126, 55)
+
+Rank: 0
+Location: (67, 59) ==> (105, 55)
+Reached? 0
+Winned? 0
+Total Running: 88
+Reach Count: 2
+Win Count: 2
+
+Rank: 1
+Location: (96, 30) ==> (112, 34)
+Reached? 0
+Winned? 0
+Total Running: 106
+Reach Count: 1
+Win Count: 1
+
+Rank: 2
+Location: (75, 42) ==> (82, 55)
+Reached? 0
+Winned? 0
+Total Running: 102
+Reach Count: 0
+Win Count: 0
+
+Rank: 3
+Location: (96, 33) ==> (99, 49)
+Reached? 0
+Winned? 0
+Total Running: 87
+Reach Count: 0
+Win Count: 0
+
+Rank: 4
+Location: (44, 38) ==> (76, 55)
+Reached? 0
+Winned? 0
+Total Running: 98
+Reach Count: 0
+Win Count: 0
+
+
+
+Round 4
+Ball's location: (126, 55) ==> (126, 55)
+
+Rank: 0
+Location: (105, 55) ==> (110, 55)
+Reached? 0
+Winned? 0
+Total Running: 93
+Reach Count: 2
+Win Count: 2
+
+Rank: 1
+Location: (112, 34) ==> (115, 41)
+Reached? 0
+Winned? 0
+Total Running: 116
+Reach Count: 1
+Win Count: 1
+
+Rank: 2
+Location: (82, 55) ==> (83, 55)
+Reached? 0
+Winned? 0
+Total Running: 103
+Reach Count: 0
+Win Count: 0
+
+Rank: 3
+Location: (99, 49) ==> (105, 55)
+Reached? 0
+Winned? 0
+Total Running: 99
+Reach Count: 0
+Win Count: 0
+
+Rank: 4
+Location: (76, 55) ==> (111, 55)
+Reached? 0
+Winned? 0
+Total Running: 133
+Reach Count: 0
+Win Count: 0
+
+In field process: detected 3 people reach in the next round! And rank 1 wins and kicks the ball to: (108, 46)
+
+
+Round 5
+Ball's location: (126, 55) ==> (108, 46)
+
+Rank: 0
+Location: (110, 55) ==> (126, 55)
+Reached? 1
+Winned? 0
+Total Running: 109
+Reach Count: 3
+Win Count: 2
+
+Rank: 1
+Location: (115, 41) ==> (126, 55)
+Reached? 1
+Winned? 1
+Total Running: 141
+Reach Count: 2
+Win Count: 2
+
+Rank: 2
+Location: (83, 55) ==> (121, 55)
+Reached? 0
+Winned? 0
+Total Running: 141
+Reach Count: 0
+Win Count: 0
+
+Rank: 3
+Location: (105, 55) ==> (126, 55)
+Reached? 1
+Winned? 0
+Total Running: 120
+Reach Count: 1
+Win Count: 0
+
+Rank: 4
+Location: (111, 55) ==> (115, 55)
+Reached? 0
+Winned? 0
+Total Running: 137
+Reach Count: 0
+Win Count: 0
+
+In field process: detected 3 people reach in the next round! And rank 4 wins and kicks the ball to: (90, 54)
+
+
+Round 6
+Ball's location: (108, 46) ==> (90, 54)
+
+Rank: 0
+Location: (126, 55) ==> (124, 55)
+Reached? 0
+Winned? 0
+Total Running: 111
+Reach Count: 3
+Win Count: 2
+
+Rank: 1
+Location: (126, 55) ==> (108, 46)
+Reached? 1
+Winned? 0
+Total Running: 168
+Reach Count: 3
+Win Count: 2
+
+Rank: 2
+Location: (121, 55) ==> (120, 46)
+Reached? 0
+Winned? 0
+Total Running: 151
+Reach Count: 0
+Win Count: 0
+
+Rank: 3
+Location: (126, 55) ==> (108, 46)
+Reached? 1
+Winned? 0
+Total Running: 147
+Reach Count: 2
+Win Count: 0
+
+Rank: 4
+Location: (115, 55) ==> (108, 46)
+Reached? 1
+Winned? 1
+Total Running: 153
+Reach Count: 1
+Win Count: 1
+
+In field process: detected 1 people reach in the next round! And rank 3 wins and kicks the ball to: (128, 32)
+
+
+Round 7
+Ball's location: (90, 54) ==> (128, 32)
+
+Rank: 0
+Location: (124, 55) ==> (100, 54)
+Reached? 0
+Winned? 0
+Total Running: 136
+Reach Count: 3
+Win Count: 2
+
+Rank: 1
+Location: (108, 46) ==> (90, 48)
+Reached? 0
+Winned? 0
+Total Running: 188
+Reach Count: 3
+Win Count: 2
+
+Rank: 2
+Location: (120, 46) ==> (120, 49)
+Reached? 0
+Winned? 0
+Total Running: 154
+Reach Count: 0
+Win Count: 0
+
+Rank: 3
+Location: (108, 46) ==> (90, 54)
+Reached? 1
+Winned? 1
+Total Running: 173
+Reach Count: 3
+Win Count: 1
+
+Rank: 4
+Location: (108, 46) ==> (104, 54)
+Reached? 0
+Winned? 0
+Total Running: 165
+Reach Count: 1
+Win Count: 1
+
+
+
+Round 8
+Ball's location: (128, 32) ==> (128, 32)
+
+Rank: 0
+Location: (100, 54) ==> (128, 40)
+Reached? 0
+Winned? 0
+Total Running: 178
+Reach Count: 3
+Win Count: 2
+
+Rank: 1
+Location: (90, 48) ==> (96, 32)
+Reached? 0
+Winned? 0
+Total Running: 210
+Reach Count: 3
+Win Count: 2
+
+Rank: 2
+Location: (120, 49) ==> (128, 40)
+Reached? 0
+Winned? 0
+Total Running: 171
+Reach Count: 0
+Win Count: 0
+
+Rank: 3
+Location: (90, 54) ==> (98, 32)
+Reached? 0
+Winned? 0
+Total Running: 203
+Reach Count: 3
+Win Count: 1
+
+Rank: 4
+Location: (104, 54) ==> (113, 51)
+Reached? 0
+Winned? 0
+Total Running: 177
+Reach Count: 1
+Win Count: 1
+
+In field process: detected 3 people reach in the next round! And rank 3 wins and kicks the ball to: (96, 7)
+
+
+Round 9
+Ball's location: (128, 32) ==> (96, 7)
+
+Rank: 0
+Location: (128, 40) ==> (128, 32)
+Reached? 1
+Winned? 0
+Total Running: 186
+Reach Count: 4
+Win Count: 2
+
+Rank: 1
+Location: (96, 32) ==> (98, 32)
+Reached? 0
+Winned? 0
+Total Running: 212
+Reach Count: 3
+Win Count: 2
+
+Rank: 2
+Location: (128, 40) ==> (128, 32)
+Reached? 1
+Winned? 0
+Total Running: 179
+Reach Count: 1
+Win Count: 0
+
+Rank: 3
+Location: (98, 32) ==> (128, 32)
+Reached? 1
+Winned? 1
+Total Running: 233
+Reach Count: 4
+Win Count: 2
+
+Rank: 4
+Location: (113, 51) ==> (128, 38)
+Reached? 0
+Winned? 0
+Total Running: 205
+Reach Count: 1
+Win Count: 1
+
+
+
+Round 10
+Ball's location: (96, 7) ==> (96, 7)
+
+Rank: 0
+Location: (128, 32) ==> (127, 22)
+Reached? 0
+Winned? 0
+Total Running: 197
+Reach Count: 4
+Win Count: 2
+
+Rank: 1
+Location: (98, 32) ==> (96, 16)
+Reached? 0
+Winned? 0
+Total Running: 230
+Reach Count: 3
+Win Count: 2
+
+Rank: 2
+Location: (128, 32) ==> (105, 31)
+Reached? 0
+Winned? 0
+Total Running: 203
+Reach Count: 1
+Win Count: 0
+
+Rank: 3
+Location: (128, 32) ==> (96, 30)
+Reached? 0
+Winned? 0
+Total Running: 267
+Reach Count: 4
+Win Count: 2
+
+Rank: 4
+Location: (128, 38) ==> (126, 36)
+Reached? 0
+Winned? 0
+Total Running: 209
+Reach Count: 1
+Win Count: 1
+
+In field process: detected 2 people reach in the next round! And rank 1 wins and kicks the ball to: (124, 41)
+
+
+Round 11
+Ball's location: (96, 7) ==> (124, 41)
+
+Rank: 0
+Location: (127, 22) ==> (114, 7)
+Reached? 0
+Winned? 0
+Total Running: 225
+Reach Count: 4
+Win Count: 2
+
+Rank: 1
+Location: (96, 16) ==> (96, 7)
+Reached? 1
+Winned? 1
+Total Running: 239
+Reach Count: 4
+Win Count: 3
+
+Rank: 2
+Location: (105, 31) ==> (96, 25)
+Reached? 0
+Winned? 0
+Total Running: 218
+Reach Count: 1
+Win Count: 0
+
+Rank: 3
+Location: (96, 30) ==> (96, 7)
+Reached? 1
+Winned? 0
+Total Running: 290
+Reach Count: 5
+Win Count: 2
+
+Rank: 4
+Location: (126, 36) ==> (118, 34)
+Reached? 0
+Winned? 0
+Total Running: 219
+Reach Count: 1
+Win Count: 1
+
+In field process: detected 1 people reach in the next round! And rank 4 wins and kicks the ball to: (128, 32)
+
+
+Round 12
+Ball's location: (124, 41) ==> (128, 32)
+
+Rank: 0
+Location: (114, 7) ==> (119, 9)
+Reached? 0
+Winned? 0
+Total Running: 232
+Reach Count: 4
+Win Count: 2
+
+Rank: 1
+Location: (96, 7) ==> (124, 22)
+Reached? 0
+Winned? 0
+Total Running: 282
+Reach Count: 4
+Win Count: 3
+
+Rank: 2
+Location: (96, 25) ==> (124, 32)
+Reached? 0
+Winned? 0
+Total Running: 253
+Reach Count: 1
+Win Count: 0
+
+Rank: 3
+Location: (96, 7) ==> (124, 15)
+Reached? 0
+Winned? 0
+Total Running: 326
+Reach Count: 5
+Win Count: 2
+
+Rank: 4
+Location: (118, 34) ==> (124, 41)
+Reached? 1
+Winned? 1
+Total Running: 232
+Reach Count: 2
+Win Count: 2
+
+In field process: detected 2 people reach in the next round! And rank 4 wins and kicks the ball to: (53, 15)
+
+
+Round 13
+Ball's location: (128, 32) ==> (53, 15)
+
+Rank: 0
+Location: (119, 9) ==> (128, 9)
+Reached? 0
+Winned? 0
+Total Running: 241
+Reach Count: 4
+Win Count: 2
+
+Rank: 1
+Location: (124, 22) ==> (128, 22)
+Reached? 0
+Winned? 0
+Total Running: 286
+Reach Count: 4
+Win Count: 3
+
+Rank: 2
+Location: (124, 32) ==> (126, 32)
+Reached? 0
+Winned? 0
+Total Running: 255
+Reach Count: 1
+Win Count: 0
+
+Rank: 3
+Location: (124, 15) ==> (128, 32)
+Reached? 1
+Winned? 0
+Total Running: 347
+Reach Count: 6
+Win Count: 2
+
+Rank: 4
+Location: (124, 41) ==> (128, 32)
+Reached? 1
+Winned? 1
+Total Running: 245
+Reach Count: 3
+Win Count: 3
+
+
+
+Round 14
+Ball's location: (53, 15) ==> (53, 15)
+
+Rank: 0
+Location: (128, 9) ==> (122, 15)
+Reached? 0
+Winned? 0
+Total Running: 253
+Reach Count: 4
+Win Count: 2
+
+Rank: 1
+Location: (128, 22) ==> (128, 21)
+Reached? 0
+Winned? 0
+Total Running: 287
+Reach Count: 4
+Win Count: 3
+
+Rank: 2
+Location: (126, 32) ==> (114, 15)
+Reached? 0
+Winned? 0
+Total Running: 284
+Reach Count: 1
+Win Count: 0
+
+Rank: 3
+Location: (128, 32) ==> (113, 15)
+Reached? 0
+Winned? 0
+Total Running: 379
+Reach Count: 6
+Win Count: 2
+
+Rank: 4
+Location: (128, 32) ==> (124, 25)
+Reached? 0
+Winned? 0
+Total Running: 256
+Reach Count: 3
+Win Count: 3
+
+
+
+Round 15
+Ball's location: (53, 15) ==> (53, 15)
+
+Rank: 0
+Location: (122, 15) ==> (79, 15)
+Reached? 0
+Winned? 0
+Total Running: 296
+Reach Count: 4
+Win Count: 2
+
+Rank: 1
+Location: (128, 21) ==> (121, 15)
+Reached? 0
+Winned? 0
+Total Running: 300
+Reach Count: 4
+Win Count: 3
+
+Rank: 2
+Location: (114, 15) ==> (67, 15)
+Reached? 0
+Winned? 0
+Total Running: 331
+Reach Count: 1
+Win Count: 0
+
+Rank: 3
+Location: (113, 15) ==> (94, 15)
+Reached? 0
+Winned? 0
+Total Running: 398
+Reach Count: 6
+Win Count: 2
+
+Rank: 4
+Location: (124, 25) ==> (121, 15)
+Reached? 0
+Winned? 0
+Total Running: 269
+Reach Count: 3
+Win Count: 3
+
+In field process: detected 1 people reach in the next round! And rank 0 wins and kicks the ball to: (52, 63)
+
+
+Round 16
+Ball's location: (53, 15) ==> (52, 63)
+
+Rank: 0
+Location: (79, 15) ==> (53, 15)
+Reached? 1
+Winned? 1
+Total Running: 322
+Reach Count: 5
+Win Count: 3
+
+Rank: 1
+Location: (121, 15) ==> (116, 15)
+Reached? 0
+Winned? 0
+Total Running: 305
+Reach Count: 4
+Win Count: 3
+
+Rank: 2
+Location: (67, 15) ==> (66, 15)
+Reached? 0
+Winned? 0
+Total Running: 332
+Reach Count: 1
+Win Count: 0
+
+Rank: 3
+Location: (94, 15) ==> (81, 15)
+Reached? 0
+Winned? 0
+Total Running: 411
+Reach Count: 6
+Win Count: 2
+
+Rank: 4
+Location: (121, 15) ==> (97, 15)
+Reached? 0
+Winned? 0
+Total Running: 293
+Reach Count: 3
+Win Count: 3
+
+
+
+Round 17
+Ball's location: (52, 63) ==> (52, 63)
+
+Rank: 0
+Location: (53, 15) ==> (52, 60)
+Reached? 0
+Winned? 0
+Total Running: 368
+Reach Count: 5
+Win Count: 3
+
+Rank: 1
+Location: (116, 15) ==> (104, 39)
+Reached? 0
+Winned? 0
+Total Running: 341
+Reach Count: 4
+Win Count: 3
+
+Rank: 2
+Location: (66, 15) ==> (52, 27)
+Reached? 0
+Winned? 0
+Total Running: 358
+Reach Count: 1
+Win Count: 0
+
+Rank: 3
+Location: (81, 15) ==> (52, 19)
+Reached? 0
+Winned? 0
+Total Running: 444
+Reach Count: 6
+Win Count: 2
+
+Rank: 4
+Location: (97, 15) ==> (79, 27)
+Reached? 0
+Winned? 0
+Total Running: 323
+Reach Count: 3
+Win Count: 3
+
+In field process: detected 2 people reach in the next round! And rank 3 wins and kicks the ball to: (28, 59)
+
+
+Round 18
+Ball's location: (52, 63) ==> (28, 59)
+
+Rank: 0
+Location: (52, 60) ==> (52, 63)
+Reached? 1
+Winned? 0
+Total Running: 371
+Reach Count: 6
+Win Count: 3
+
+Rank: 1
+Location: (104, 39) ==> (104, 63)
+Reached? 0
+Winned? 0
+Total Running: 365
+Reach Count: 4
+Win Count: 3
+
+Rank: 2
+Location: (52, 27) ==> (52, 46)
+Reached? 0
+Winned? 0
+Total Running: 377
+Reach Count: 1
+Win Count: 0
+
+Rank: 3
+Location: (52, 19) ==> (52, 63)
+Reached? 1
+Winned? 1
+Total Running: 488
+Reach Count: 7
+Win Count: 3
+
+Rank: 4
+Location: (79, 27) ==> (77, 30)
+Reached? 0
+Winned? 0
+Total Running: 328
+Reach Count: 3
+Win Count: 3
+
+
+
+Round 19
+Ball's location: (28, 59) ==> (28, 59)
+
+Rank: 0
+Location: (52, 63) ==> (46, 59)
+Reached? 0
+Winned? 0
+Total Running: 381
+Reach Count: 6
+Win Count: 3
+
+Rank: 1
+Location: (104, 63) ==> (65, 59)
+Reached? 0
+Winned? 0
+Total Running: 408
+Reach Count: 4
+Win Count: 3
+
+Rank: 2
+Location: (52, 46) ==> (43, 48)
+Reached? 0
+Winned? 0
+Total Running: 388
+Reach Count: 1
+Win Count: 0
+
+Rank: 3
+Location: (52, 63) ==> (28, 62)
+Reached? 0
+Winned? 0
+Total Running: 513
+Reach Count: 7
+Win Count: 3
+
+Rank: 4
+Location: (77, 30) ==> (66, 59)
+Reached? 0
+Winned? 0
+Total Running: 368
+Reach Count: 3
+Win Count: 3
+
+In field process: detected 1 people reach in the next round! And rank 3 wins and kicks the ball to: (62, 34)
+
+
+Round 20
+Ball's location: (28, 59) ==> (62, 34)
+
+Rank: 0
+Location: (46, 59) ==> (37, 59)
+Reached? 0
+Winned? 0
+Total Running: 390
+Reach Count: 6
+Win Count: 3
+
+Rank: 1
+Location: (65, 59) ==> (38, 59)
+Reached? 0
+Winned? 0
+Total Running: 435
+Reach Count: 4
+Win Count: 3
+
+Rank: 2
+Location: (43, 48) ==> (41, 59)
+Reached? 0
+Winned? 0
+Total Running: 401
+Reach Count: 1
+Win Count: 0
+
+Rank: 3
+Location: (28, 62) ==> (28, 59)
+Reached? 1
+Winned? 1
+Total Running: 516
+Reach Count: 8
+Win Count: 4
+
+Rank: 4
+Location: (66, 59) ==> (60, 59)
+Reached? 0
+Winned? 0
+Total Running: 374
+Reach Count: 3
+Win Count: 3
+
+
+
+Round 21
+Ball's location: (62, 34) ==> (62, 34)
+
+Rank: 0
+Location: (37, 59) ==> (62, 39)
+Reached? 0
+Winned? 0
+Total Running: 435
+Reach Count: 6
+Win Count: 3
+
+Rank: 1
+Location: (38, 59) ==> (62, 51)
+Reached? 0
+Winned? 0
+Total Running: 467
+Reach Count: 4
+Win Count: 3
+
+Rank: 2
+Location: (41, 59) ==> (62, 53)
+Reached? 0
+Winned? 0
+Total Running: 428
+Reach Count: 1
+Win Count: 0
+
+Rank: 3
+Location: (28, 59) ==> (62, 58)
+Reached? 0
+Winned? 0
+Total Running: 551
+Reach Count: 8
+Win Count: 4
+
+Rank: 4
+Location: (60, 59) ==> (62, 37)
+Reached? 0
+Winned? 0
+Total Running: 398
+Reach Count: 3
+Win Count: 3
+
+In field process: detected 4 people reach in the next round! And rank 2 wins and kicks the ball to: (49, 6)
+
+
+Round 22
+Ball's location: (62, 34) ==> (49, 6)
+
+Rank: 0
+Location: (62, 39) ==> (62, 34)
+Reached? 1
+Winned? 0
+Total Running: 440
+Reach Count: 7
+Win Count: 3
+
+Rank: 1
+Location: (62, 51) ==> (62, 34)
+Reached? 1
+Winned? 0
+Total Running: 484
+Reach Count: 5
+Win Count: 3
+
+Rank: 2
+Location: (62, 53) ==> (62, 34)
+Reached? 1
+Winned? 1
+Total Running: 447
+Reach Count: 2
+Win Count: 1
+
+Rank: 3
+Location: (62, 58) ==> (62, 56)
+Reached? 0
+Winned? 0
+Total Running: 553
+Reach Count: 8
+Win Count: 4
+
+Rank: 4
+Location: (62, 37) ==> (62, 34)
+Reached? 1
+Winned? 0
+Total Running: 401
+Reach Count: 4
+Win Count: 3
+
+In field process: detected 1 people reach in the next round! And rank 4 wins and kicks the ball to: (76, 19)
+
+
+Round 23
+Ball's location: (49, 6) ==> (76, 19)
+
+Rank: 0
+Location: (62, 34) ==> (61, 32)
+Reached? 0
+Winned? 0
+Total Running: 443
+Reach Count: 7
+Win Count: 3
+
+Rank: 1
+Location: (62, 34) ==> (49, 26)
+Reached? 0
+Winned? 0
+Total Running: 505
+Reach Count: 5
+Win Count: 3
+
+Rank: 2
+Location: (62, 34) ==> (61, 24)
+Reached? 0
+Winned? 0
+Total Running: 458
+Reach Count: 2
+Win Count: 1
+
+Rank: 3
+Location: (62, 56) ==> (49, 38)
+Reached? 0
+Winned? 0
+Total Running: 584
+Reach Count: 8
+Win Count: 4
+
+Rank: 4
+Location: (62, 34) ==> (49, 6)
+Reached? 1
+Winned? 1
+Total Running: 442
+Reach Count: 5
+Win Count: 4
+
+In field process: detected 2 people reach in the next round! And rank 1 wins and kicks the ball to: (95, 44)
+
+
+Round 24
+Ball's location: (76, 19) ==> (95, 44)
+
+Rank: 0
+Location: (61, 32) ==> (76, 29)
+Reached? 0
+Winned? 0
+Total Running: 461
+Reach Count: 7
+Win Count: 3
+
+Rank: 1
+Location: (49, 26) ==> (76, 19)
+Reached? 1
+Winned? 1
+Total Running: 539
+Reach Count: 6
+Win Count: 4
+
+Rank: 2
+Location: (61, 24) ==> (76, 19)
+Reached? 1
+Winned? 0
+Total Running: 478
+Reach Count: 3
+Win Count: 1
+
+Rank: 3
+Location: (49, 38) ==> (67, 38)
+Reached? 0
+Winned? 0
+Total Running: 602
+Reach Count: 8
+Win Count: 4
+
+Rank: 4
+Location: (49, 6) ==> (51, 19)
+Reached? 0
+Winned? 0
+Total Running: 457
+Reach Count: 5
+Win Count: 4
+
+In field process: detected 1 people reach in the next round! And rank 3 wins and kicks the ball to: (69, 49)
+
+
+Round 25
+Ball's location: (95, 44) ==> (69, 49)
+
+Rank: 0
+Location: (76, 29) ==> (95, 34)
+Reached? 0
+Winned? 0
+Total Running: 485
+Reach Count: 7
+Win Count: 3
+
+Rank: 1
+Location: (76, 19) ==> (84, 27)
+Reached? 0
+Winned? 0
+Total Running: 555
+Reach Count: 6
+Win Count: 4
+
+Rank: 2
+Location: (76, 19) ==> (78, 25)
+Reached? 0
+Winned? 0
+Total Running: 486
+Reach Count: 3
+Win Count: 1
+
+Rank: 3
+Location: (67, 38) ==> (95, 44)
+Reached? 1
+Winned? 1
+Total Running: 636
+Reach Count: 9
+Win Count: 5
+
+Rank: 4
+Location: (51, 19) ==> (56, 37)
+Reached? 0
+Winned? 0
+Total Running: 480
+Reach Count: 5
+Win Count: 4
+
+In field process: detected 2 people reach in the next round! And rank 4 wins and kicks the ball to: (21, 15)
+
+
+Round 26
+Ball's location: (69, 49) ==> (21, 15)
+
+Rank: 0
+Location: (95, 34) ==> (69, 37)
+Reached? 0
+Winned? 0
+Total Running: 514
+Reach Count: 7
+Win Count: 3
+
+Rank: 1
+Location: (84, 27) ==> (75, 29)
+Reached? 0
+Winned? 0
+Total Running: 566
+Reach Count: 6
+Win Count: 4
+
+Rank: 2
+Location: (78, 25) ==> (69, 31)
+Reached? 0
+Winned? 0
+Total Running: 501
+Reach Count: 3
+Win Count: 1
+
+Rank: 3
+Location: (95, 44) ==> (69, 49)
+Reached? 1
+Winned? 0
+Total Running: 667
+Reach Count: 10
+Win Count: 5
+
+Rank: 4
+Location: (56, 37) ==> (69, 49)
+Reached? 1
+Winned? 1
+Total Running: 505
+Reach Count: 6
+Win Count: 5
+
+
+
+Round 27
+Ball's location: (21, 15) ==> (21, 15)
+
+Rank: 0
+Location: (69, 37) ==> (69, 32)
+Reached? 0
+Winned? 0
+Total Running: 519
+Reach Count: 7
+Win Count: 3
+
+Rank: 1
+Location: (75, 29) ==> (66, 15)
+Reached? 0
+Winned? 0
+Total Running: 589
+Reach Count: 6
+Win Count: 4
+
+Rank: 2
+Location: (69, 31) ==> (56, 15)
+Reached? 0
+Winned? 0
+Total Running: 530
+Reach Count: 3
+Win Count: 1
+
+Rank: 3
+Location: (69, 49) ==> (68, 23)
+Reached? 0
+Winned? 0
+Total Running: 694
+Reach Count: 10
+Win Count: 5
+
+Rank: 4
+Location: (69, 49) ==> (42, 44)
+Reached? 0
+Winned? 0
+Total Running: 537
+Reach Count: 6
+Win Count: 5
+
+
+
+Round 28
+Ball's location: (21, 15) ==> (21, 15)
+
+Rank: 0
+Location: (69, 32) ==> (53, 15)
+Reached? 0
+Winned? 0
+Total Running: 552
+Reach Count: 7
+Win Count: 3
+
+Rank: 1
+Location: (66, 15) ==> (28, 15)
+Reached? 0
+Winned? 0
+Total Running: 627
+Reach Count: 6
+Win Count: 4
+
+Rank: 2
+Location: (56, 15) ==> (36, 15)
+Reached? 0
+Winned? 0
+Total Running: 550
+Reach Count: 3
+Win Count: 1
+
+Rank: 3
+Location: (68, 23) ==> (30, 15)
+Reached? 0
+Winned? 0
+Total Running: 740
+Reach Count: 10
+Win Count: 5
+
+Rank: 4
+Location: (42, 44) ==> (21, 43)
+Reached? 0
+Winned? 0
+Total Running: 559
+Reach Count: 6
+Win Count: 5
+
+In field process: detected 2 people reach in the next round! And rank 1 wins and kicks the ball to: (69, 35)
+
+
+Round 29
+Ball's location: (21, 15) ==> (69, 35)
+
+Rank: 0
+Location: (53, 15) ==> (33, 15)
+Reached? 0
+Winned? 0
+Total Running: 572
+Reach Count: 7
+Win Count: 3
+
+Rank: 1
+Location: (28, 15) ==> (21, 15)
+Reached? 1
+Winned? 1
+Total Running: 634
+Reach Count: 7
+Win Count: 5
+
+Rank: 2
+Location: (36, 15) ==> (34, 15)
+Reached? 0
+Winned? 0
+Total Running: 552
+Reach Count: 3
+Win Count: 1
+
+Rank: 3
+Location: (30, 15) ==> (23, 15)
+Reached? 0
+Winned? 0
+Total Running: 747
+Reach Count: 10
+Win Count: 5
+
+Rank: 4
+Location: (21, 43) ==> (21, 15)
+Reached? 1
+Winned? 0
+Total Running: 587
+Reach Count: 7
+Win Count: 5
+
+
+
+Round 30
+Ball's location: (69, 35) ==> (69, 35)
+
+Rank: 0
+Location: (33, 15) ==> (46, 20)
+Reached? 0
+Winned? 0
+Total Running: 590
+Reach Count: 7
+Win Count: 3
+
+Rank: 1
+Location: (21, 15) ==> (21, 17)
+Reached? 0
+Winned? 0
+Total Running: 636
+Reach Count: 7
+Win Count: 5
+
+Rank: 2
+Location: (34, 15) ==> (69, 19)
+Reached? 0
+Winned? 0
+Total Running: 591
+Reach Count: 3
+Win Count: 1
+
+Rank: 3
+Location: (23, 15) ==> (69, 19)
+Reached? 0
+Winned? 0
+Total Running: 797
+Reach Count: 10
+Win Count: 5
+
+Rank: 4
+Location: (21, 15) ==> (24, 35)
+Reached? 0
+Winned? 0
+Total Running: 610
+Reach Count: 7
+Win Count: 5
+
+In field process: detected 2 people reach in the next round! And rank 2 wins and kicks the ball to: (53, 11)
+
+
+Round 31
+Ball's location: (69, 35) ==> (53, 11)
+
+Rank: 0
+Location: (46, 20) ==> (69, 35)
+Reached? 1
+Winned? 0
+Total Running: 628
+Reach Count: 8
+Win Count: 3
+
+Rank: 1
+Location: (21, 17) ==> (27, 35)
+Reached? 0
+Winned? 0
+Total Running: 660
+Reach Count: 7
+Win Count: 5
+
+Rank: 2
+Location: (69, 19) ==> (69, 35)
+Reached? 1
+Winned? 1
+Total Running: 607
+Reach Count: 4
+Win Count: 2
+
+Rank: 3
+Location: (69, 19) ==> (69, 24)
+Reached? 0
+Winned? 0
+Total Running: 802
+Reach Count: 10
+Win Count: 5
+
+Rank: 4
+Location: (24, 35) ==> (37, 35)
+Reached? 0
+Winned? 0
+Total Running: 623
+Reach Count: 7
+Win Count: 5
+
+
+
+Round 32
+Ball's location: (53, 11) ==> (53, 11)
+
+Rank: 0
+Location: (69, 35) ==> (67, 26)
+Reached? 0
+Winned? 0
+Total Running: 639
+Reach Count: 8
+Win Count: 3
+
+Rank: 1
+Location: (27, 35) ==> (53, 22)
+Reached? 0
+Winned? 0
+Total Running: 699
+Reach Count: 7
+Win Count: 5
+
+Rank: 2
+Location: (69, 35) ==> (53, 13)
+Reached? 0
+Winned? 0
+Total Running: 645
+Reach Count: 4
+Win Count: 2
+
+Rank: 3
+Location: (69, 24) ==> (66, 23)
+Reached? 0
+Winned? 0
+Total Running: 806
+Reach Count: 10
+Win Count: 5
+
+Rank: 4
+Location: (37, 35) ==> (53, 27)
+Reached? 0
+Winned? 0
+Total Running: 647
+Reach Count: 7
+Win Count: 5
+
+In field process: detected 2 people reach in the next round! And rank 2 wins and kicks the ball to: (34, 1)
+
+
+Round 33
+Ball's location: (53, 11) ==> (34, 1)
+
+Rank: 0
+Location: (67, 26) ==> (66, 20)
+Reached? 0
+Winned? 0
+Total Running: 646
+Reach Count: 8
+Win Count: 3
+
+Rank: 1
+Location: (53, 22) ==> (53, 11)
+Reached? 1
+Winned? 0
+Total Running: 710
+Reach Count: 8
+Win Count: 5
+
+Rank: 2
+Location: (53, 13) ==> (53, 11)
+Reached? 1
+Winned? 1
+Total Running: 647
+Reach Count: 5
+Win Count: 3
+
+Rank: 3
+Location: (66, 23) ==> (65, 22)
+Reached? 0
+Winned? 0
+Total Running: 808
+Reach Count: 10
+Win Count: 5
+
+Rank: 4
+Location: (53, 27) ==> (53, 13)
+Reached? 0
+Winned? 0
+Total Running: 661
+Reach Count: 7
+Win Count: 5
+
+
+
+Round 34
+Ball's location: (34, 1) ==> (34, 1)
+
+Rank: 0
+Location: (66, 20) ==> (65, 1)
+Reached? 0
+Winned? 0
+Total Running: 666
+Reach Count: 8
+Win Count: 3
+
+Rank: 1
+Location: (53, 11) ==> (46, 1)
+Reached? 0
+Winned? 0
+Total Running: 727
+Reach Count: 8
+Win Count: 5
+
+Rank: 2
+Location: (53, 11) ==> (49, 1)
+Reached? 0
+Winned? 0
+Total Running: 661
+Reach Count: 5
+Win Count: 3
+
+Rank: 3
+Location: (65, 22) ==> (58, 19)
+Reached? 0
+Winned? 0
+Total Running: 818
+Reach Count: 10
+Win Count: 5
+
+Rank: 4
+Location: (53, 13) ==> (51, 1)
+Reached? 0
+Winned? 0
+Total Running: 675
+Reach Count: 7
+Win Count: 5
+
+In field process: detected 3 people reach in the next round! And rank 2 wins and kicks the ball to: (125, 46)
+
+
+Round 35
+Ball's location: (34, 1) ==> (125, 46)
+
+Rank: 0
+Location: (65, 1) ==> (52, 1)
+Reached? 0
+Winned? 0
+Total Running: 679
+Reach Count: 8
+Win Count: 3
+
+Rank: 1
+Location: (46, 1) ==> (34, 1)
+Reached? 1
+Winned? 0
+Total Running: 739
+Reach Count: 9
+Win Count: 5
+
+Rank: 2
+Location: (49, 1) ==> (34, 1)
+Reached? 1
+Winned? 1
+Total Running: 676
+Reach Count: 6
+Win Count: 4
+
+Rank: 3
+Location: (58, 19) ==> (55, 13)
+Reached? 0
+Winned? 0
+Total Running: 827
+Reach Count: 10
+Win Count: 5
+
+Rank: 4
+Location: (51, 1) ==> (34, 1)
+Reached? 1
+Winned? 0
+Total Running: 692
+Reach Count: 8
+Win Count: 5
+
+
+
+Round 36
+Ball's location: (125, 46) ==> (125, 46)
+
+Rank: 0
+Location: (52, 1) ==> (54, 6)
+Reached? 0
+Winned? 0
+Total Running: 686
+Reach Count: 8
+Win Count: 3
+
+Rank: 1
+Location: (34, 1) ==> (46, 14)
+Reached? 0
+Winned? 0
+Total Running: 764
+Reach Count: 9
+Win Count: 5
+
+Rank: 2
+Location: (34, 1) ==> (41, 27)
+Reached? 0
+Winned? 0
+Total Running: 709
+Reach Count: 6
+Win Count: 4
+
+Rank: 3
+Location: (55, 13) ==> (62, 23)
+Reached? 0
+Winned? 0
+Total Running: 844
+Reach Count: 10
+Win Count: 5
+
+Rank: 4
+Location: (34, 1) ==> (35, 24)
+Reached? 0
+Winned? 0
+Total Running: 716
+Reach Count: 8
+Win Count: 5
+
+
+
+Round 37
+Ball's location: (125, 46) ==> (125, 46)
+
+Rank: 0
+Location: (54, 6) ==> (62, 24)
+Reached? 0
+Winned? 0
+Total Running: 712
+Reach Count: 8
+Win Count: 3
+
+Rank: 1
+Location: (46, 14) ==> (49, 15)
+Reached? 0
+Winned? 0
+Total Running: 768
+Reach Count: 9
+Win Count: 5
+
+Rank: 2
+Location: (41, 27) ==> (52, 46)
+Reached? 0
+Winned? 0
+Total Running: 739
+Reach Count: 6
+Win Count: 4
+
+Rank: 3
+Location: (62, 23) ==> (67, 46)
+Reached? 0
+Winned? 0
+Total Running: 872
+Reach Count: 10
+Win Count: 5
+
+Rank: 4
+Location: (35, 24) ==> (46, 46)
+Reached? 0
+Winned? 0
+Total Running: 749
+Reach Count: 8
+Win Count: 5
+
+
+
+Round 38
+Ball's location: (125, 46) ==> (125, 46)
+
+Rank: 0
+Location: (62, 24) ==> (64, 46)
+Reached? 0
+Winned? 0
+Total Running: 736
+Reach Count: 8
+Win Count: 3
+
+Rank: 1
+Location: (49, 15) ==> (60, 46)
+Reached? 0
+Winned? 0
+Total Running: 810
+Reach Count: 9
+Win Count: 5
+
+Rank: 2
+Location: (52, 46) ==> (97, 46)
+Reached? 0
+Winned? 0
+Total Running: 784
+Reach Count: 6
+Win Count: 4
+
+Rank: 3
+Location: (67, 46) ==> (78, 46)
+Reached? 0
+Winned? 0
+Total Running: 883
+Reach Count: 10
+Win Count: 5
+
+Rank: 4
+Location: (46, 46) ==> (93, 46)
+Reached? 0
+Winned? 0
+Total Running: 796
+Reach Count: 8
+Win Count: 5
+
+In field process: detected 1 people reach in the next round! And rank 2 wins and kicks the ball to: (58, 36)
+
+
+Round 39
+Ball's location: (125, 46) ==> (58, 36)
+
+Rank: 0
+Location: (64, 46) ==> (65, 46)
+Reached? 0
+Winned? 0
+Total Running: 737
+Reach Count: 8
+Win Count: 3
+
+Rank: 1
+Location: (60, 46) ==> (101, 46)
+Reached? 0
+Winned? 0
+Total Running: 851
+Reach Count: 9
+Win Count: 5
+
+Rank: 2
+Location: (97, 46) ==> (125, 46)
+Reached? 1
+Winned? 1
+Total Running: 812
+Reach Count: 7
+Win Count: 5
+
+Rank: 3
+Location: (78, 46) ==> (105, 46)
+Reached? 0
+Winned? 0
+Total Running: 910
+Reach Count: 10
+Win Count: 5
+
+Rank: 4
+Location: (93, 46) ==> (124, 46)
+Reached? 0
+Winned? 0
+Total Running: 827
+Reach Count: 8
+Win Count: 5
+
+
+
+Round 40
+Ball's location: (58, 36) ==> (58, 36)
+
+Rank: 0
+Location: (65, 46) ==> (58, 39)
+Reached? 0
+Winned? 0
+Total Running: 751
+Reach Count: 8
+Win Count: 3
+
+Rank: 1
+Location: (101, 46) ==> (101, 42)
+Reached? 0
+Winned? 0
+Total Running: 855
+Reach Count: 9
+Win Count: 5
+
+Rank: 2
+Location: (125, 46) ==> (122, 36)
+Reached? 0
+Winned? 0
+Total Running: 825
+Reach Count: 7
+Win Count: 5
+
+Rank: 3
+Location: (105, 46) ==> (98, 44)
+Reached? 0
+Winned? 0
+Total Running: 919
+Reach Count: 10
+Win Count: 5
+
+Rank: 4
+Location: (124, 46) ==> (101, 36)
+Reached? 0
+Winned? 0
+Total Running: 860
+Reach Count: 8
+Win Count: 5
+
+In field process: detected 1 people reach in the next round! And rank 0 wins and kicks the ball to: (44, 57)
+
+
+Round 41
+Ball's location: (58, 36) ==> (44, 57)
+
+Rank: 0
+Location: (58, 39) ==> (58, 36)
+Reached? 1
+Winned? 1
+Total Running: 754
+Reach Count: 9
+Win Count: 4
+
+Rank: 1
+Location: (101, 42) ==> (89, 36)
+Reached? 0
+Winned? 0
+Total Running: 873
+Reach Count: 9
+Win Count: 5
+
+Rank: 2
+Location: (122, 36) ==> (105, 36)
+Reached? 0
+Winned? 0
+Total Running: 842
+Reach Count: 7
+Win Count: 5
+
+Rank: 3
+Location: (98, 44) ==> (78, 36)
+Reached? 0
+Winned? 0
+Total Running: 947
+Reach Count: 10
+Win Count: 5
+
+Rank: 4
+Location: (101, 36) ==> (97, 36)
+Reached? 0
+Winned? 0
+Total Running: 864
+Reach Count: 8
+Win Count: 5
+
+
+
+Round 42
+Ball's location: (44, 57) ==> (44, 57)
+
+Rank: 0
+Location: (58, 36) ==> (44, 51)
+Reached? 0
+Winned? 0
+Total Running: 783
+Reach Count: 9
+Win Count: 4
+
+Rank: 1
+Location: (89, 36) ==> (72, 57)
+Reached? 0
+Winned? 0
+Total Running: 911
+Reach Count: 9
+Win Count: 5
+
+Rank: 2
+Location: (105, 36) ==> (86, 57)
+Reached? 0
+Winned? 0
+Total Running: 882
+Reach Count: 7
+Win Count: 5
+
+Rank: 3
+Location: (78, 36) ==> (44, 46)
+Reached? 0
+Winned? 0
+Total Running: 991
+Reach Count: 10
+Win Count: 5
+
+Rank: 4
+Location: (97, 36) ==> (91, 57)
+Reached? 0
+Winned? 0
+Total Running: 891
+Reach Count: 8
+Win Count: 5
+
+In field process: detected 1 people reach in the next round! And rank 3 wins and kicks the ball to: (98, 32)
+
+
+Round 43
+Ball's location: (44, 57) ==> (98, 32)
+
+Rank: 0
+Location: (44, 51) ==> (44, 52)
+Reached? 0
+Winned? 0
+Total Running: 784
+Reach Count: 9
+Win Count: 4
+
+Rank: 1
+Location: (72, 57) ==> (47, 57)
+Reached? 0
+Winned? 0
+Total Running: 936
+Reach Count: 9
+Win Count: 5
+
+Rank: 2
+Location: (86, 57) ==> (63, 57)
+Reached? 0
+Winned? 0
+Total Running: 905
+Reach Count: 7
+Win Count: 5
+
+Rank: 3
+Location: (44, 46) ==> (44, 57)
+Reached? 1
+Winned? 1
+Total Running: 1002
+Reach Count: 11
+Win Count: 6
+
+Rank: 4
+Location: (91, 57) ==> (66, 57)
+Reached? 0
+Winned? 0
+Total Running: 916
+Reach Count: 8
+Win Count: 5
+
+
+
+Round 44
+Ball's location: (98, 32) ==> (98, 32)
+
+Rank: 0
+Location: (44, 52) ==> (59, 32)
+Reached? 0
+Winned? 0
+Total Running: 819
+Reach Count: 9
+Win Count: 4
+
+Rank: 1
+Location: (47, 57) ==> (60, 32)
+Reached? 0
+Winned? 0
+Total Running: 974
+Reach Count: 9
+Win Count: 5
+
+Rank: 2
+Location: (63, 57) ==> (71, 53)
+Reached? 0
+Winned? 0
+Total Running: 917
+Reach Count: 7
+Win Count: 5
+
+Rank: 3
+Location: (44, 57) ==> (60, 32)
+Reached? 0
+Winned? 0
+Total Running: 1043
+Reach Count: 11
+Win Count: 6
+
+Rank: 4
+Location: (66, 57) ==> (69, 49)
+Reached? 0
+Winned? 0
+Total Running: 927
+Reach Count: 8
+Win Count: 5
+
+
+
+Round 45
+Ball's location: (98, 32) ==> (98, 32)
+
+Rank: 0
+Location: (59, 32) ==> (91, 32)
+Reached? 0
+Winned? 0
+Total Running: 851
+Reach Count: 9
+Win Count: 4
+
+Rank: 1
+Location: (60, 32) ==> (90, 32)
+Reached? 0
+Winned? 0
+Total Running: 1004
+Reach Count: 9
+Win Count: 5
+
+Rank: 2
+Location: (71, 53) ==> (98, 48)
+Reached? 0
+Winned? 0
+Total Running: 949
+Reach Count: 7
+Win Count: 5
+
+Rank: 3
+Location: (60, 32) ==> (61, 32)
+Reached? 0
+Winned? 0
+Total Running: 1044
+Reach Count: 11
+Win Count: 6
+
+Rank: 4
+Location: (69, 49) ==> (81, 47)
+Reached? 0
+Winned? 0
+Total Running: 941
+Reach Count: 8
+Win Count: 5
+
+In field process: detected 4 people reach in the next round! And rank 0 wins and kicks the ball to: (72, 46)
+
+
+Round 46
+Ball's location: (98, 32) ==> (72, 46)
+
+Rank: 0
+Location: (91, 32) ==> (98, 32)
+Reached? 1
+Winned? 1
+Total Running: 858
+Reach Count: 10
+Win Count: 5
+
+Rank: 1
+Location: (90, 32) ==> (98, 32)
+Reached? 1
+Winned? 0
+Total Running: 1012
+Reach Count: 10
+Win Count: 5
+
+Rank: 2
+Location: (98, 48) ==> (98, 32)
+Reached? 1
+Winned? 0
+Total Running: 965
+Reach Count: 8
+Win Count: 5
+
+Rank: 3
+Location: (61, 32) ==> (98, 32)
+Reached? 1
+Winned? 0
+Total Running: 1081
+Reach Count: 12
+Win Count: 6
+
+Rank: 4
+Location: (81, 47) ==> (98, 35)
+Reached? 0
+Winned? 0
+Total Running: 970
+Reach Count: 8
+Win Count: 5
+
+
+
+Round 47
+Ball's location: (72, 46) ==> (72, 46)
+
+Rank: 0
+Location: (98, 32) ==> (97, 42)
+Reached? 0
+Winned? 0
+Total Running: 869
+Reach Count: 10
+Win Count: 5
+
+Rank: 1
+Location: (98, 32) ==> (72, 35)
+Reached? 0
+Winned? 0
+Total Running: 1041
+Reach Count: 10
+Win Count: 5
+
+Rank: 2
+Location: (98, 32) ==> (72, 38)
+Reached? 0
+Winned? 0
+Total Running: 997
+Reach Count: 8
+Win Count: 5
+
+Rank: 3
+Location: (98, 32) ==> (72, 42)
+Reached? 0
+Winned? 0
+Total Running: 1117
+Reach Count: 12
+Win Count: 6
+
+Rank: 4
+Location: (98, 35) ==> (72, 45)
+Reached? 0
+Winned? 0
+Total Running: 1006
+Reach Count: 8
+Win Count: 5
+
+In field process: detected 4 people reach in the next round! And rank 4 wins and kicks the ball to: (23, 18)
+
+
+Round 48
+Ball's location: (72, 46) ==> (23, 18)
+
+Rank: 0
+Location: (97, 42) ==> (72, 42)
+Reached? 0
+Winned? 0
+Total Running: 894
+Reach Count: 10
+Win Count: 5
+
+Rank: 1
+Location: (72, 35) ==> (72, 46)
+Reached? 1
+Winned? 0
+Total Running: 1052
+Reach Count: 11
+Win Count: 5
+
+Rank: 2
+Location: (72, 38) ==> (72, 46)
+Reached? 1
+Winned? 0
+Total Running: 1005
+Reach Count: 9
+Win Count: 5
+
+Rank: 3
+Location: (72, 42) ==> (72, 46)
+Reached? 1
+Winned? 0
+Total Running: 1121
+Reach Count: 13
+Win Count: 6
+
+Rank: 4
+Location: (72, 45) ==> (72, 46)
+Reached? 1
+Winned? 1
+Total Running: 1007
+Reach Count: 9
+Win Count: 6
+
+
+
+Round 49
+Ball's location: (23, 18) ==> (23, 18)
+
+Rank: 0
+Location: (72, 42) ==> (52, 18)
+Reached? 0
+Winned? 0
+Total Running: 938
+Reach Count: 10
+Win Count: 5
+
+Rank: 1
+Location: (72, 46) ==> (68, 18)
+Reached? 0
+Winned? 0
+Total Running: 1084
+Reach Count: 11
+Win Count: 5
+
+Rank: 2
+Location: (72, 46) ==> (70, 46)
+Reached? 0
+Winned? 0
+Total Running: 1007
+Reach Count: 9
+Win Count: 5
+
+Rank: 3
+Location: (72, 46) ==> (60, 37)
+Reached? 0
+Winned? 0
+Total Running: 1142
+Reach Count: 13
+Win Count: 6
+
+Rank: 4
+Location: (72, 46) ==> (53, 18)
+Reached? 0
+Winned? 0
+Total Running: 1054
+Reach Count: 9
+Win Count: 6
+
+In field process: detected 1 people reach in the next round! And rank 4 wins and kicks the ball to: (71, 44)
+
+
+Round 50
+Ball's location: (23, 18) ==> (71, 44)
+
+Rank: 0
+Location: (52, 18) ==> (25, 18)
+Reached? 0
+Winned? 0
+Total Running: 965
+Reach Count: 10
+Win Count: 5
+
+Rank: 1
+Location: (68, 18) ==> (29, 18)
+Reached? 0
+Winned? 0
+Total Running: 1123
+Reach Count: 11
+Win Count: 5
+
+Rank: 2
+Location: (70, 46) ==> (69, 46)
+Reached? 0
+Winned? 0
+Total Running: 1008
+Reach Count: 9
+Win Count: 5
+
+Rank: 3
+Location: (60, 37) ==> (23, 35)
+Reached? 0
+Winned? 0
+Total Running: 1181
+Reach Count: 13
+Win Count: 6
+
+Rank: 4
+Location: (53, 18) ==> (23, 18)
+Reached? 1
+Winned? 1
+Total Running: 1084
+Reach Count: 10
+Win Count: 7
+
+In field process: detected 1 people reach in the next round! And rank 2 wins and kicks the ball to: (46, 27)
+
+
+Round 51
+Ball's location: (71, 44) ==> (46, 27)
+
+Rank: 0
+Location: (25, 18) ==> (43, 44)
+Reached? 0
+Winned? 0
+Total Running: 1009
+Reach Count: 10
+Win Count: 5
+
+Rank: 1
+Location: (29, 18) ==> (32, 24)
+Reached? 0
+Winned? 0
+Total Running: 1132
+Reach Count: 11
+Win Count: 5
+
+Rank: 2
+Location: (69, 46) ==> (71, 44)
+Reached? 1
+Winned? 1
+Total Running: 1012
+Reach Count: 10
+Win Count: 6
+
+Rank: 3
+Location: (23, 35) ==> (41, 44)
+Reached? 0
+Winned? 0
+Total Running: 1208
+Reach Count: 13
+Win Count: 6
+
+Rank: 4
+Location: (23, 18) ==> (23, 40)
+Reached? 0
+Winned? 0
+Total Running: 1106
+Reach Count: 10
+Win Count: 7
+
+In field process: detected 1 people reach in the next round! And rank 1 wins and kicks the ball to: (101, 35)
+
+
+Round 52
+Ball's location: (46, 27) ==> (101, 35)
+
+Rank: 0
+Location: (43, 44) ==> (46, 35)
+Reached? 0
+Winned? 0
+Total Running: 1021
+Reach Count: 10
+Win Count: 5
+
+Rank: 1
+Location: (32, 24) ==> (46, 27)
+Reached? 1
+Winned? 1
+Total Running: 1149
+Reach Count: 12
+Win Count: 6
+
+Rank: 2
+Location: (71, 44) ==> (67, 27)
+Reached? 0
+Winned? 0
+Total Running: 1033
+Reach Count: 10
+Win Count: 6
+
+Rank: 3
+Location: (41, 44) ==> (41, 41)
+Reached? 0
+Winned? 0
+Total Running: 1211
+Reach Count: 13
+Win Count: 6
+
+Rank: 4
+Location: (23, 40) ==> (28, 27)
+Reached? 0
+Winned? 0
+Total Running: 1124
+Reach Count: 10
+Win Count: 7
+
+
+
+Round 53
+Ball's location: (101, 35) ==> (101, 35)
+
+Rank: 0
+Location: (46, 35) ==> (69, 35)
+Reached? 0
+Winned? 0
+Total Running: 1044
+Reach Count: 10
+Win Count: 5
+
+Rank: 1
+Location: (46, 27) ==> (79, 35)
+Reached? 0
+Winned? 0
+Total Running: 1190
+Reach Count: 12
+Win Count: 6
+
+Rank: 2
+Location: (67, 27) ==> (101, 29)
+Reached? 0
+Winned? 0
+Total Running: 1069
+Reach Count: 10
+Win Count: 6
+
+Rank: 3
+Location: (41, 41) ==> (67, 35)
+Reached? 0
+Winned? 0
+Total Running: 1243
+Reach Count: 13
+Win Count: 6
+
+Rank: 4
+Location: (28, 27) ==> (65, 35)
+Reached? 0
+Winned? 0
+Total Running: 1169
+Reach Count: 10
+Win Count: 7
+
+In field process: detected 2 people reach in the next round! And rank 2 wins and kicks the ball to: (58, 0)
+
+
+Round 54
+Ball's location: (101, 35) ==> (58, 0)
+
+Rank: 0
+Location: (69, 35) ==> (73, 35)
+Reached? 0
+Winned? 0
+Total Running: 1048
+Reach Count: 10
+Win Count: 5
+
+Rank: 1
+Location: (79, 35) ==> (87, 35)
+Reached? 0
+Winned? 0
+Total Running: 1198
+Reach Count: 12
+Win Count: 6
+
+Rank: 2
+Location: (101, 29) ==> (101, 35)
+Reached? 1
+Winned? 1
+Total Running: 1075
+Reach Count: 11
+Win Count: 7
+
+Rank: 3
+Location: (67, 35) ==> (101, 35)
+Reached? 1
+Winned? 0
+Total Running: 1277
+Reach Count: 14
+Win Count: 6
+
+Rank: 4
+Location: (65, 35) ==> (79, 35)
+Reached? 0
+Winned? 0
+Total Running: 1183
+Reach Count: 10
+Win Count: 7
+
+
+
+Round 55
+Ball's location: (58, 0) ==> (58, 0)
+
+Rank: 0
+Location: (73, 35) ==> (73, 31)
+Reached? 0
+Winned? 0
+Total Running: 1052
+Reach Count: 10
+Win Count: 5
+
+Rank: 1
+Location: (87, 35) ==> (86, 28)
+Reached? 0
+Winned? 0
+Total Running: 1206
+Reach Count: 12
+Win Count: 6
+
+Rank: 2
+Location: (101, 35) ==> (58, 30)
+Reached? 0
+Winned? 0
+Total Running: 1123
+Reach Count: 11
+Win Count: 7
+
+Rank: 3
+Location: (101, 35) ==> (58, 34)
+Reached? 0
+Winned? 0
+Total Running: 1321
+Reach Count: 14
+Win Count: 6
+
+Rank: 4
+Location: (79, 35) ==> (58, 15)
+Reached? 0
+Winned? 0
+Total Running: 1224
+Reach Count: 10
+Win Count: 7
+
+In field process: detected 1 people reach in the next round! And rank 2 wins and kicks the ball to: (119, 27)
+
+
+Round 56
+Ball's location: (58, 0) ==> (119, 27)
+
+Rank: 0
+Location: (73, 31) ==> (73, 29)
+Reached? 0
+Winned? 0
+Total Running: 1054
+Reach Count: 10
+Win Count: 5
+
+Rank: 1
+Location: (86, 28) ==> (58, 10)
+Reached? 0
+Winned? 0
+Total Running: 1252
+Reach Count: 12
+Win Count: 6
+
+Rank: 2
+Location: (58, 30) ==> (58, 0)
+Reached? 1
+Winned? 1
+Total Running: 1153
+Reach Count: 12
+Win Count: 8
+
+Rank: 3
+Location: (58, 34) ==> (58, 12)
+Reached? 0
+Winned? 0
+Total Running: 1343
+Reach Count: 14
+Win Count: 6
+
+Rank: 4
+Location: (58, 15) ==> (58, 5)
+Reached? 0
+Winned? 0
+Total Running: 1234
+Reach Count: 10
+Win Count: 7
+
+
+
+Round 57
+Ball's location: (119, 27) ==> (119, 27)
+
+Rank: 0
+Location: (73, 29) ==> (114, 27)
+Reached? 0
+Winned? 0
+Total Running: 1097
+Reach Count: 10
+Win Count: 5
+
+Rank: 1
+Location: (58, 10) ==> (71, 27)
+Reached? 0
+Winned? 0
+Total Running: 1282
+Reach Count: 12
+Win Count: 6
+
+Rank: 2
+Location: (58, 0) ==> (58, 27)
+Reached? 0
+Winned? 0
+Total Running: 1180
+Reach Count: 12
+Win Count: 8
+
+Rank: 3
+Location: (58, 12) ==> (92, 27)
+Reached? 0
+Winned? 0
+Total Running: 1392
+Reach Count: 14
+Win Count: 6
+
+Rank: 4
+Location: (58, 5) ==> (65, 27)
+Reached? 0
+Winned? 0
+Total Running: 1263
+Reach Count: 10
+Win Count: 7
+
+In field process: detected 2 people reach in the next round! And rank 3 wins and kicks the ball to: (37, 27)
+
+
+Round 58
+Ball's location: (119, 27) ==> (37, 27)
+
+Rank: 0
+Location: (114, 27) ==> (119, 27)
+Reached? 1
+Winned? 0
+Total Running: 1102
+Reach Count: 11
+Win Count: 5
+
+Rank: 1
+Location: (71, 27) ==> (103, 27)
+Reached? 0
+Winned? 0
+Total Running: 1314
+Reach Count: 12
+Win Count: 6
+
+Rank: 2
+Location: (58, 27) ==> (106, 27)
+Reached? 0
+Winned? 0
+Total Running: 1228
+Reach Count: 12
+Win Count: 8
+
+Rank: 3
+Location: (92, 27) ==> (119, 27)
+Reached? 1
+Winned? 1
+Total Running: 1419
+Reach Count: 15
+Win Count: 7
+
+Rank: 4
+Location: (65, 27) ==> (74, 27)
+Reached? 0
+Winned? 0
+Total Running: 1272
+Reach Count: 10
+Win Count: 7
+
+
+
+Round 59
+Ball's location: (37, 27) ==> (37, 27)
+
+Rank: 0
+Location: (119, 27) ==> (111, 27)
+Reached? 0
+Winned? 0
+Total Running: 1110
+Reach Count: 11
+Win Count: 5
+
+Rank: 1
+Location: (103, 27) ==> (66, 27)
+Reached? 0
+Winned? 0
+Total Running: 1351
+Reach Count: 12
+Win Count: 6
+
+Rank: 2
+Location: (106, 27) ==> (59, 27)
+Reached? 0
+Winned? 0
+Total Running: 1275
+Reach Count: 12
+Win Count: 8
+
+Rank: 3
+Location: (119, 27) ==> (74, 27)
+Reached? 0
+Winned? 0
+Total Running: 1464
+Reach Count: 15
+Win Count: 7
+
+Rank: 4
+Location: (74, 27) ==> (41, 27)
+Reached? 0
+Winned? 0
+Total Running: 1305
+Reach Count: 10
+Win Count: 7
+
+In field process: detected 1 people reach in the next round! And rank 4 wins and kicks the ball to: (104, 60)
+
+
+Round 60
+Ball's location: (37, 27) ==> (104, 60)
+
+Rank: 0
+Location: (111, 27) ==> (91, 27)
+Reached? 0
+Winned? 0
+Total Running: 1130
+Reach Count: 11
+Win Count: 5
+
+Rank: 1
+Location: (66, 27) ==> (60, 27)
+Reached? 0
+Winned? 0
+Total Running: 1357
+Reach Count: 12
+Win Count: 6
+
+Rank: 2
+Location: (59, 27) ==> (38, 27)
+Reached? 0
+Winned? 0
+Total Running: 1296
+Reach Count: 12
+Win Count: 8
+
+Rank: 3
+Location: (74, 27) ==> (41, 27)
+Reached? 0
+Winned? 0
+Total Running: 1497
+Reach Count: 15
+Win Count: 7
+
+Rank: 4
+Location: (41, 27) ==> (37, 27)
+Reached? 1
+Winned? 1
+Total Running: 1309
+Reach Count: 11
+Win Count: 8
+
+
+
+Round 61
+Ball's location: (104, 60) ==> (104, 60)
+
+Rank: 0
+Location: (91, 27) ==> (91, 36)
+Reached? 0
+Winned? 0
+Total Running: 1139
+Reach Count: 11
+Win Count: 5
+
+Rank: 1
+Location: (60, 27) ==> (65, 60)
+Reached? 0
+Winned? 0
+Total Running: 1395
+Reach Count: 12
+Win Count: 6
+
+Rank: 2
+Location: (38, 27) ==> (54, 32)
+Reached? 0
+Winned? 0
+Total Running: 1317
+Reach Count: 12
+Win Count: 8
+
+Rank: 3
+Location: (41, 27) ==> (58, 60)
+Reached? 0
+Winned? 0
+Total Running: 1547
+Reach Count: 15
+Win Count: 7
+
+Rank: 4
+Location: (37, 27) ==> (46, 29)
+Reached? 0
+Winned? 0
+Total Running: 1320
+Reach Count: 11
+Win Count: 8
+
+In field process: detected 1 people reach in the next round! And rank 1 wins and kicks the ball to: (97, 36)
+
+
+Round 62
+Ball's location: (104, 60) ==> (97, 36)
+
+Rank: 0
+Location: (91, 36) ==> (104, 46)
+Reached? 0
+Winned? 0
+Total Running: 1162
+Reach Count: 11
+Win Count: 5
+
+Rank: 1
+Location: (65, 60) ==> (104, 60)
+Reached? 1
+Winned? 1
+Total Running: 1434
+Reach Count: 13
+Win Count: 7
+
+Rank: 2
+Location: (54, 32) ==> (64, 60)
+Reached? 0
+Winned? 0
+Total Running: 1355
+Reach Count: 12
+Win Count: 8
+
+Rank: 3
+Location: (58, 60) ==> (66, 60)
+Reached? 0
+Winned? 0
+Total Running: 1555
+Reach Count: 15
+Win Count: 7
+
+Rank: 4
+Location: (46, 29) ==> (51, 60)
+Reached? 0
+Winned? 0
+Total Running: 1356
+Reach Count: 11
+Win Count: 8
+
+In field process: detected 2 people reach in the next round! And rank 1 wins and kicks the ball to: (54, 28)
+
+
+Round 63
+Ball's location: (97, 36) ==> (54, 28)
+
+Rank: 0
+Location: (104, 46) ==> (97, 36)
+Reached? 1
+Winned? 0
+Total Running: 1179
+Reach Count: 12
+Win Count: 5
+
+Rank: 1
+Location: (104, 60) ==> (97, 36)
+Reached? 1
+Winned? 1
+Total Running: 1465
+Reach Count: 14
+Win Count: 8
+
+Rank: 2
+Location: (64, 60) ==> (68, 54)
+Reached? 0
+Winned? 0
+Total Running: 1365
+Reach Count: 12
+Win Count: 8
+
+Rank: 3
+Location: (66, 60) ==> (68, 51)
+Reached? 0
+Winned? 0
+Total Running: 1566
+Reach Count: 15
+Win Count: 7
+
+Rank: 4
+Location: (51, 60) ==> (66, 36)
+Reached? 0
+Winned? 0
+Total Running: 1395
+Reach Count: 11
+Win Count: 8
+
+In field process: detected 1 people reach in the next round! And rank 4 wins and kicks the ball to: (88, 30)
+
+
+Round 64
+Ball's location: (54, 28) ==> (88, 30)
+
+Rank: 0
+Location: (97, 36) ==> (94, 35)
+Reached? 0
+Winned? 0
+Total Running: 1183
+Reach Count: 12
+Win Count: 5
+
+Rank: 1
+Location: (97, 36) ==> (95, 36)
+Reached? 0
+Winned? 0
+Total Running: 1467
+Reach Count: 14
+Win Count: 8
+
+Rank: 2
+Location: (68, 54) ==> (68, 53)
+Reached? 0
+Winned? 0
+Total Running: 1366
+Reach Count: 12
+Win Count: 8
+
+Rank: 3
+Location: (68, 51) ==> (54, 40)
+Reached? 0
+Winned? 0
+Total Running: 1591
+Reach Count: 15
+Win Count: 7
+
+Rank: 4
+Location: (66, 36) ==> (54, 28)
+Reached? 1
+Winned? 1
+Total Running: 1415
+Reach Count: 12
+Win Count: 9
+
+In field process: detected 2 people reach in the next round! And rank 0 wins and kicks the ball to: (102, 4)
+
+
+Round 65
+Ball's location: (88, 30) ==> (102, 4)
+
+Rank: 0
+Location: (94, 35) ==> (88, 30)
+Reached? 1
+Winned? 1
+Total Running: 1194
+Reach Count: 13
+Win Count: 6
+
+Rank: 1
+Location: (95, 36) ==> (88, 30)
+Reached? 1
+Winned? 0
+Total Running: 1480
+Reach Count: 15
+Win Count: 8
+
+Rank: 2
+Location: (68, 53) ==> (81, 51)
+Reached? 0
+Winned? 0
+Total Running: 1381
+Reach Count: 12
+Win Count: 8
+
+Rank: 3
+Location: (54, 40) ==> (88, 36)
+Reached? 0
+Winned? 0
+Total Running: 1629
+Reach Count: 15
+Win Count: 7
+
+Rank: 4
+Location: (54, 28) ==> (68, 30)
+Reached? 0
+Winned? 0
+Total Running: 1431
+Reach Count: 12
+Win Count: 9
+
+In field process: detected 1 people reach in the next round! And rank 1 wins and kicks the ball to: (65, 53)
+
+
+Round 66
+Ball's location: (102, 4) ==> (65, 53)
+
+Rank: 0
+Location: (88, 30) ==> (102, 11)
+Reached? 0
+Winned? 0
+Total Running: 1227
+Reach Count: 13
+Win Count: 6
+
+Rank: 1
+Location: (88, 30) ==> (102, 4)
+Reached? 1
+Winned? 1
+Total Running: 1520
+Reach Count: 16
+Win Count: 9
+
+Rank: 2
+Location: (81, 51) ==> (81, 45)
+Reached? 0
+Winned? 0
+Total Running: 1387
+Reach Count: 12
+Win Count: 8
+
+Rank: 3
+Location: (88, 36) ==> (88, 32)
+Reached? 0
+Winned? 0
+Total Running: 1633
+Reach Count: 15
+Win Count: 7
+
+Rank: 4
+Location: (68, 30) ==> (68, 29)
+Reached? 0
+Winned? 0
+Total Running: 1432
+Reach Count: 12
+Win Count: 9
+
+In field process: detected 2 people reach in the next round! And rank 3 wins and kicks the ball to: (57, 1)
+
+
+Round 67
+Ball's location: (65, 53) ==> (57, 1)
+
+Rank: 0
+Location: (102, 11) ==> (99, 23)
+Reached? 0
+Winned? 0
+Total Running: 1242
+Reach Count: 13
+Win Count: 6
+
+Rank: 1
+Location: (102, 4) ==> (96, 17)
+Reached? 0
+Winned? 0
+Total Running: 1539
+Reach Count: 16
+Win Count: 9
+
+Rank: 2
+Location: (81, 45) ==> (65, 53)
+Reached? 1
+Winned? 0
+Total Running: 1411
+Reach Count: 13
+Win Count: 8
+
+Rank: 3
+Location: (88, 32) ==> (65, 53)
+Reached? 1
+Winned? 1
+Total Running: 1677
+Reach Count: 16
+Win Count: 8
+
+Rank: 4
+Location: (68, 29) ==> (67, 29)
+Reached? 0
+Winned? 0
+Total Running: 1433
+Reach Count: 12
+Win Count: 9
+
+
+
+Round 68
+Ball's location: (57, 1) ==> (57, 1)
+
+Rank: 0
+Location: (99, 23) ==> (87, 1)
+Reached? 0
+Winned? 0
+Total Running: 1276
+Reach Count: 13
+Win Count: 6
+
+Rank: 1
+Location: (96, 17) ==> (57, 8)
+Reached? 0
+Winned? 0
+Total Running: 1587
+Reach Count: 16
+Win Count: 9
+
+Rank: 2
+Location: (65, 53) ==> (57, 20)
+Reached? 0
+Winned? 0
+Total Running: 1452
+Reach Count: 13
+Win Count: 8
+
+Rank: 3
+Location: (65, 53) ==> (57, 14)
+Reached? 0
+Winned? 0
+Total Running: 1724
+Reach Count: 16
+Win Count: 8
+
+Rank: 4
+Location: (67, 29) ==> (57, 16)
+Reached? 0
+Winned? 0
+Total Running: 1456
+Reach Count: 12
+Win Count: 9
+
+In field process: detected 3 people reach in the next round! And rank 1 wins and kicks the ball to: (62, 40)
+
+
+Round 69
+Ball's location: (57, 1) ==> (62, 40)
+
+Rank: 0
+Location: (87, 1) ==> (66, 1)
+Reached? 0
+Winned? 0
+Total Running: 1297
+Reach Count: 13
+Win Count: 6
+
+Rank: 1
+Location: (57, 8) ==> (57, 1)
+Reached? 1
+Winned? 1
+Total Running: 1594
+Reach Count: 17
+Win Count: 10
+
+Rank: 2
+Location: (57, 20) ==> (57, 1)
+Reached? 1
+Winned? 0
+Total Running: 1471
+Reach Count: 14
+Win Count: 8
+
+Rank: 3
+Location: (57, 14) ==> (57, 2)
+Reached? 0
+Winned? 0
+Total Running: 1736
+Reach Count: 16
+Win Count: 8
+
+Rank: 4
+Location: (57, 16) ==> (57, 1)
+Reached? 1
+Winned? 0
+Total Running: 1471
+Reach Count: 13
+Win Count: 9
+
+
+
+Round 70
+Ball's location: (62, 40) ==> (62, 40)
+
+Rank: 0
+Location: (66, 1) ==> (62, 17)
+Reached? 0
+Winned? 0
+Total Running: 1317
+Reach Count: 13
+Win Count: 6
+
+Rank: 1
+Location: (57, 1) ==> (62, 33)
+Reached? 0
+Winned? 0
+Total Running: 1631
+Reach Count: 17
+Win Count: 10
+
+Rank: 2
+Location: (57, 1) ==> (62, 6)
+Reached? 0
+Winned? 0
+Total Running: 1481
+Reach Count: 14
+Win Count: 8
+
+Rank: 3
+Location: (57, 2) ==> (62, 21)
+Reached? 0
+Winned? 0
+Total Running: 1760
+Reach Count: 16
+Win Count: 8
+
+Rank: 4
+Location: (57, 1) ==> (62, 15)
+Reached? 0
+Winned? 0
+Total Running: 1490
+Reach Count: 13
+Win Count: 9
+
+In field process: detected 4 people reach in the next round! And rank 0 wins and kicks the ball to: (96, 24)
+
+
+Round 71
+Ball's location: (62, 40) ==> (96, 24)
+
+Rank: 0
+Location: (62, 17) ==> (62, 40)
+Reached? 1
+Winned? 1
+Total Running: 1340
+Reach Count: 14
+Win Count: 7
+
+Rank: 1
+Location: (62, 33) ==> (62, 40)
+Reached? 1
+Winned? 0
+Total Running: 1638
+Reach Count: 18
+Win Count: 10
+
+Rank: 2
+Location: (62, 6) ==> (62, 40)
+Reached? 1
+Winned? 0
+Total Running: 1515
+Reach Count: 15
+Win Count: 8
+
+Rank: 3
+Location: (62, 21) ==> (62, 40)
+Reached? 1
+Winned? 0
+Total Running: 1779
+Reach Count: 17
+Win Count: 8
+
+Rank: 4
+Location: (62, 15) ==> (62, 22)
+Reached? 0
+Winned? 0
+Total Running: 1497
+Reach Count: 13
+Win Count: 9
+
+In field process: detected 1 people reach in the next round! And rank 4 wins and kicks the ball to: (13, 5)
+
+
+Round 72
+Ball's location: (96, 24) ==> (13, 5)
+
+Rank: 0
+Location: (62, 40) ==> (63, 24)
+Reached? 0
+Winned? 0
+Total Running: 1357
+Reach Count: 14
+Win Count: 7
+
+Rank: 1
+Location: (62, 40) ==> (96, 26)
+Reached? 0
+Winned? 0
+Total Running: 1686
+Reach Count: 18
+Win Count: 10
+
+Rank: 2
+Location: (62, 40) ==> (96, 39)
+Reached? 0
+Winned? 0
+Total Running: 1550
+Reach Count: 15
+Win Count: 8
+
+Rank: 3
+Location: (62, 40) ==> (96, 40)
+Reached? 0
+Winned? 0
+Total Running: 1813
+Reach Count: 17
+Win Count: 8
+
+Rank: 4
+Location: (62, 22) ==> (96, 24)
+Reached? 1
+Winned? 1
+Total Running: 1533
+Reach Count: 14
+Win Count: 10
+
+
+
+Round 73
+Ball's location: (13, 5) ==> (13, 5)
+
+Rank: 0
+Location: (63, 24) ==> (42, 5)
+Reached? 0
+Winned? 0
+Total Running: 1397
+Reach Count: 14
+Win Count: 7
+
+Rank: 1
+Location: (96, 26) ==> (88, 5)
+Reached? 0
+Winned? 0
+Total Running: 1715
+Reach Count: 18
+Win Count: 10
+
+Rank: 2
+Location: (96, 39) ==> (93, 18)
+Reached? 0
+Winned? 0
+Total Running: 1574
+Reach Count: 15
+Win Count: 8
+
+Rank: 3
+Location: (96, 40) ==> (79, 31)
+Reached? 0
+Winned? 0
+Total Running: 1839
+Reach Count: 17
+Win Count: 8
+
+Rank: 4
+Location: (96, 24) ==> (65, 5)
+Reached? 0
+Winned? 0
+Total Running: 1583
+Reach Count: 14
+Win Count: 10
+
+
+
+Round 74
+Ball's location: (13, 5) ==> (13, 5)
+
+Rank: 0
+Location: (42, 5) ==> (14, 5)
+Reached? 0
+Winned? 0
+Total Running: 1425
+Reach Count: 14
+Win Count: 7
+
+Rank: 1
+Location: (88, 5) ==> (58, 5)
+Reached? 0
+Winned? 0
+Total Running: 1745
+Reach Count: 18
+Win Count: 10
+
+Rank: 2
+Location: (93, 18) ==> (83, 5)
+Reached? 0
+Winned? 0
+Total Running: 1597
+Reach Count: 15
+Win Count: 8
+
+Rank: 3
+Location: (79, 31) ==> (74, 24)
+Reached? 0
+Winned? 0
+Total Running: 1851
+Reach Count: 17
+Win Count: 8
+
+Rank: 4
+Location: (65, 5) ==> (48, 5)
+Reached? 0
+Winned? 0
+Total Running: 1600
+Reach Count: 14
+Win Count: 10
+
+In field process: detected 1 people reach in the next round! And rank 0 wins and kicks the ball to: (28, 38)
+
+
+Round 75
+Ball's location: (13, 5) ==> (28, 38)
+
+Rank: 0
+Location: (14, 5) ==> (13, 5)
+Reached? 1
+Winned? 1
+Total Running: 1426
+Reach Count: 15
+Win Count: 8
+
+Rank: 1
+Location: (58, 5) ==> (52, 5)
+Reached? 0
+Winned? 0
+Total Running: 1751
+Reach Count: 18
+Win Count: 10
+
+Rank: 2
+Location: (83, 5) ==> (43, 5)
+Reached? 0
+Winned? 0
+Total Running: 1637
+Reach Count: 15
+Win Count: 8
+
+Rank: 3
+Location: (74, 24) ==> (68, 5)
+Reached? 0
+Winned? 0
+Total Running: 1876
+Reach Count: 17
+Win Count: 8
+
+Rank: 4
+Location: (48, 5) ==> (23, 5)
+Reached? 0
+Winned? 0
+Total Running: 1625
+Reach Count: 14
+Win Count: 10
+
+
+
+Round 76
+Ball's location: (28, 38) ==> (28, 38)
+
+Rank: 0
+Location: (13, 5) ==> (28, 12)
+Reached? 0
+Winned? 0
+Total Running: 1448
+Reach Count: 15
+Win Count: 8
+
+Rank: 1
+Location: (52, 5) ==> (28, 23)
+Reached? 0
+Winned? 0
+Total Running: 1793
+Reach Count: 18
+Win Count: 10
+
+Rank: 2
+Location: (43, 5) ==> (28, 30)
+Reached? 0
+Winned? 0
+Total Running: 1677
+Reach Count: 15
+Win Count: 8
+
+Rank: 3
+Location: (68, 5) ==> (28, 8)
+Reached? 0
+Winned? 0
+Total Running: 1919
+Reach Count: 17
+Win Count: 8
+
+Rank: 4
+Location: (23, 5) ==> (28, 13)
+Reached? 0
+Winned? 0
+Total Running: 1638
+Reach Count: 14
+Win Count: 10
+
+In field process: detected 3 people reach in the next round! And rank 2 wins and kicks the ball to: (65, 63)
+
+
+Round 77
+Ball's location: (28, 38) ==> (65, 63)
+
+Rank: 0
+Location: (28, 12) ==> (28, 38)
+Reached? 1
+Winned? 0
+Total Running: 1474
+Reach Count: 16
+Win Count: 8
+
+Rank: 1
+Location: (28, 23) ==> (28, 38)
+Reached? 1
+Winned? 0
+Total Running: 1808
+Reach Count: 19
+Win Count: 10
+
+Rank: 2
+Location: (28, 30) ==> (28, 38)
+Reached? 1
+Winned? 1
+Total Running: 1685
+Reach Count: 16
+Win Count: 9
+
+Rank: 3
+Location: (28, 8) ==> (28, 25)
+Reached? 0
+Winned? 0
+Total Running: 1936
+Reach Count: 17
+Win Count: 8
+
+Rank: 4
+Location: (28, 13) ==> (28, 20)
+Reached? 0
+Winned? 0
+Total Running: 1645
+Reach Count: 14
+Win Count: 10
+
+
+
+Round 78
+Ball's location: (65, 63) ==> (65, 63)
+
+Rank: 0
+Location: (28, 38) ==> (34, 41)
+Reached? 0
+Winned? 0
+Total Running: 1483
+Reach Count: 16
+Win Count: 8
+
+Rank: 1
+Location: (28, 38) ==> (65, 38)
+Reached? 0
+Winned? 0
+Total Running: 1845
+Reach Count: 19
+Win Count: 10
+
+Rank: 2
+Location: (28, 38) ==> (65, 46)
+Reached? 0
+Winned? 0
+Total Running: 1730
+Reach Count: 16
+Win Count: 9
+
+Rank: 3
+Location: (28, 25) ==> (38, 33)
+Reached? 0
+Winned? 0
+Total Running: 1954
+Reach Count: 17
+Win Count: 8
+
+Rank: 4
+Location: (28, 20) ==> (54, 28)
+Reached? 0
+Winned? 0
+Total Running: 1679
+Reach Count: 14
+Win Count: 10
+
+In field process: detected 2 people reach in the next round! And rank 1 wins and kicks the ball to: (45, 21)
+
+
+Round 79
+Ball's location: (65, 63) ==> (45, 21)
+
+Rank: 0
+Location: (34, 41) ==> (36, 43)
+Reached? 0
+Winned? 0
+Total Running: 1487
+Reach Count: 16
+Win Count: 8
+
+Rank: 1
+Location: (65, 38) ==> (65, 63)
+Reached? 1
+Winned? 1
+Total Running: 1870
+Reach Count: 20
+Win Count: 11
+
+Rank: 2
+Location: (65, 46) ==> (65, 63)
+Reached? 1
+Winned? 0
+Total Running: 1747
+Reach Count: 17
+Win Count: 9
+
+Rank: 3
+Location: (38, 33) ==> (54, 33)
+Reached? 0
+Winned? 0
+Total Running: 1970
+Reach Count: 17
+Win Count: 8
+
+Rank: 4
+Location: (54, 28) ==> (65, 35)
+Reached? 0
+Winned? 0
+Total Running: 1697
+Reach Count: 14
+Win Count: 10
+
+In field process: detected 2 people reach in the next round! And rank 0 wins and kicks the ball to: (9, 44)
+
+
+Round 80
+Ball's location: (45, 21) ==> (9, 44)
+
+Rank: 0
+Location: (36, 43) ==> (45, 21)
+Reached? 1
+Winned? 1
+Total Running: 1518
+Reach Count: 17
+Win Count: 9
+
+Rank: 1
+Location: (65, 63) ==> (63, 52)
+Reached? 0
+Winned? 0
+Total Running: 1883
+Reach Count: 20
+Win Count: 11
+
+Rank: 2
+Location: (65, 63) ==> (60, 51)
+Reached? 0
+Winned? 0
+Total Running: 1764
+Reach Count: 17
+Win Count: 9
+
+Rank: 3
+Location: (54, 33) ==> (45, 21)
+Reached? 1
+Winned? 0
+Total Running: 1991
+Reach Count: 18
+Win Count: 8
+
+Rank: 4
+Location: (65, 35) ==> (61, 21)
+Reached? 0
+Winned? 0
+Total Running: 1715
+Reach Count: 14
+Win Count: 10
+
+
+
+Round 81
+Ball's location: (9, 44) ==> (9, 44)
+
+Rank: 0
+Location: (45, 21) ==> (39, 23)
+Reached? 0
+Winned? 0
+Total Running: 1526
+Reach Count: 17
+Win Count: 9
+
+Rank: 1
+Location: (63, 52) ==> (44, 44)
+Reached? 0
+Winned? 0
+Total Running: 1910
+Reach Count: 20
+Win Count: 11
+
+Rank: 2
+Location: (60, 51) ==> (25, 44)
+Reached? 0
+Winned? 0
+Total Running: 1806
+Reach Count: 17
+Win Count: 9
+
+Rank: 3
+Location: (45, 21) ==> (9, 23)
+Reached? 0
+Winned? 0
+Total Running: 2029
+Reach Count: 18
+Win Count: 8
+
+Rank: 4
+Location: (61, 21) ==> (43, 24)
+Reached? 0
+Winned? 0
+Total Running: 1736
+Reach Count: 14
+Win Count: 10
+
+In field process: detected 3 people reach in the next round! And rank 3 wins and kicks the ball to: (82, 53)
+
+
+Round 82
+Ball's location: (9, 44) ==> (82, 53)
+
+Rank: 0
+Location: (39, 23) ==> (39, 26)
+Reached? 0
+Winned? 0
+Total Running: 1529
+Reach Count: 17
+Win Count: 9
+
+Rank: 1
+Location: (44, 44) ==> (9, 44)
+Reached? 1
+Winned? 0
+Total Running: 1945
+Reach Count: 21
+Win Count: 11
+
+Rank: 2
+Location: (25, 44) ==> (9, 44)
+Reached? 1
+Winned? 0
+Total Running: 1822
+Reach Count: 18
+Win Count: 9
+
+Rank: 3
+Location: (9, 23) ==> (9, 44)
+Reached? 1
+Winned? 1
+Total Running: 2050
+Reach Count: 19
+Win Count: 9
+
+Rank: 4
+Location: (43, 24) ==> (9, 40)
+Reached? 0
+Winned? 0
+Total Running: 1786
+Reach Count: 14
+Win Count: 10
+
+
+
+Round 83
+Ball's location: (82, 53) ==> (82, 53)
+
+Rank: 0
+Location: (39, 26) ==> (48, 53)
+Reached? 0
+Winned? 0
+Total Running: 1565
+Reach Count: 17
+Win Count: 9
+
+Rank: 1
+Location: (9, 44) ==> (41, 53)
+Reached? 0
+Winned? 0
+Total Running: 1986
+Reach Count: 21
+Win Count: 11
+
+Rank: 2
+Location: (9, 44) ==> (14, 53)
+Reached? 0
+Winned? 0
+Total Running: 1836
+Reach Count: 18
+Win Count: 9
+
+Rank: 3
+Location: (9, 44) ==> (10, 45)
+Reached? 0
+Winned? 0
+Total Running: 2052
+Reach Count: 19
+Win Count: 9
+
+Rank: 4
+Location: (9, 40) ==> (29, 53)
+Reached? 0
+Winned? 0
+Total Running: 1819
+Reach Count: 14
+Win Count: 10
+
+In field process: detected 1 people reach in the next round! And rank 0 wins and kicks the ball to: (16, 19)
+
+
+Round 84
+Ball's location: (82, 53) ==> (16, 19)
+
+Rank: 0
+Location: (48, 53) ==> (82, 53)
+Reached? 1
+Winned? 1
+Total Running: 1599
+Reach Count: 18
+Win Count: 10
+
+Rank: 1
+Location: (41, 53) ==> (59, 53)
+Reached? 0
+Winned? 0
+Total Running: 2004
+Reach Count: 21
+Win Count: 11
+
+Rank: 2
+Location: (14, 53) ==> (17, 53)
+Reached? 0
+Winned? 0
+Total Running: 1839
+Reach Count: 18
+Win Count: 9
+
+Rank: 3
+Location: (10, 45) ==> (51, 53)
+Reached? 0
+Winned? 0
+Total Running: 2101
+Reach Count: 19
+Win Count: 9
+
+Rank: 4
+Location: (29, 53) ==> (65, 53)
+Reached? 0
+Winned? 0
+Total Running: 1855
+Reach Count: 14
+Win Count: 10
+
+
+
+Round 85
+Ball's location: (16, 19) ==> (16, 19)
+
+Rank: 0
+Location: (82, 53) ==> (82, 52)
+Reached? 0
+Winned? 0
+Total Running: 1600
+Reach Count: 18
+Win Count: 10
+
+Rank: 1
+Location: (59, 53) ==> (52, 47)
+Reached? 0
+Winned? 0
+Total Running: 2017
+Reach Count: 21
+Win Count: 11
+
+Rank: 2
+Location: (17, 53) ==> (16, 27)
+Reached? 0
+Winned? 0
+Total Running: 1866
+Reach Count: 18
+Win Count: 9
+
+Rank: 3
+Location: (51, 53) ==> (26, 50)
+Reached? 0
+Winned? 0
+Total Running: 2129
+Reach Count: 19
+Win Count: 9
+
+Rank: 4
+Location: (65, 53) ==> (63, 19)
+Reached? 0
+Winned? 0
+Total Running: 1891
+Reach Count: 14
+Win Count: 10
+
+In field process: detected 1 people reach in the next round! And rank 2 wins and kicks the ball to: (67, 16)
+
+
+Round 86
+Ball's location: (16, 19) ==> (67, 16)
+
+Rank: 0
+Location: (82, 52) ==> (79, 52)
+Reached? 0
+Winned? 0
+Total Running: 1603
+Reach Count: 18
+Win Count: 10
+
+Rank: 1
+Location: (52, 47) ==> (16, 35)
+Reached? 0
+Winned? 0
+Total Running: 2065
+Reach Count: 21
+Win Count: 11
+
+Rank: 2
+Location: (16, 27) ==> (16, 19)
+Reached? 1
+Winned? 1
+Total Running: 1874
+Reach Count: 19
+Win Count: 10
+
+Rank: 3
+Location: (26, 50) ==> (23, 49)
+Reached? 0
+Winned? 0
+Total Running: 2133
+Reach Count: 19
+Win Count: 9
+
+Rank: 4
+Location: (63, 19) ==> (39, 19)
+Reached? 0
+Winned? 0
+Total Running: 1915
+Reach Count: 14
+Win Count: 10
+
+In field process: detected 2 people reach in the next round! And rank 0 wins and kicks the ball to: (31, 39)
+
+
+Round 87
+Ball's location: (67, 16) ==> (31, 39)
+
+Rank: 0
+Location: (79, 52) ==> (67, 16)
+Reached? 1
+Winned? 1
+Total Running: 1651
+Reach Count: 19
+Win Count: 11
+
+Rank: 1
+Location: (16, 35) ==> (19, 33)
+Reached? 0
+Winned? 0
+Total Running: 2070
+Reach Count: 21
+Win Count: 11
+
+Rank: 2
+Location: (16, 19) ==> (62, 16)
+Reached? 0
+Winned? 0
+Total Running: 1923
+Reach Count: 19
+Win Count: 10
+
+Rank: 3
+Location: (23, 49) ==> (44, 42)
+Reached? 0
+Winned? 0
+Total Running: 2161
+Reach Count: 19
+Win Count: 9
+
+Rank: 4
+Location: (39, 19) ==> (67, 16)
+Reached? 1
+Winned? 0
+Total Running: 1946
+Reach Count: 15
+Win Count: 10
+
+
+
+Round 88
+Ball's location: (31, 39) ==> (31, 39)
+
+Rank: 0
+Location: (67, 16) ==> (67, 31)
+Reached? 0
+Winned? 0
+Total Running: 1666
+Reach Count: 19
+Win Count: 11
+
+Rank: 1
+Location: (19, 33) ==> (21, 39)
+Reached? 0
+Winned? 0
+Total Running: 2078
+Reach Count: 21
+Win Count: 11
+
+Rank: 2
+Location: (62, 16) ==> (58, 16)
+Reached? 0
+Winned? 0
+Total Running: 1927
+Reach Count: 19
+Win Count: 10
+
+Rank: 3
+Location: (44, 42) ==> (35, 39)
+Reached? 0
+Winned? 0
+Total Running: 2173
+Reach Count: 19
+Win Count: 9
+
+Rank: 4
+Location: (67, 16) ==> (58, 39)
+Reached? 0
+Winned? 0
+Total Running: 1978
+Reach Count: 15
+Win Count: 10
+
+In field process: detected 2 people reach in the next round! And rank 1 wins and kicks the ball to: (108, 13)
+
+
+Round 89
+Ball's location: (31, 39) ==> (108, 13)
+
+Rank: 0
+Location: (67, 31) ==> (65, 39)
+Reached? 0
+Winned? 0
+Total Running: 1676
+Reach Count: 19
+Win Count: 11
+
+Rank: 1
+Location: (21, 39) ==> (31, 39)
+Reached? 1
+Winned? 1
+Total Running: 2088
+Reach Count: 22
+Win Count: 12
+
+Rank: 2
+Location: (58, 16) ==> (56, 21)
+Reached? 0
+Winned? 0
+Total Running: 1934
+Reach Count: 19
+Win Count: 10
+
+Rank: 3
+Location: (35, 39) ==> (31, 39)
+Reached? 1
+Winned? 0
+Total Running: 2177
+Reach Count: 20
+Win Count: 9
+
+Rank: 4
+Location: (58, 39) ==> (42, 39)
+Reached? 0
+Winned? 0
+Total Running: 1994
+Reach Count: 15
+Win Count: 10
+
+
+
+Round 90
+Ball's location: (108, 13) ==> (108, 13)
+
+Rank: 0
+Location: (65, 39) ==> (108, 38)
+Reached? 0
+Winned? 0
+Total Running: 1720
+Reach Count: 19
+Win Count: 11
+
+Rank: 1
+Location: (31, 39) ==> (47, 37)
+Reached? 0
+Winned? 0
+Total Running: 2106
+Reach Count: 22
+Win Count: 12
+
+Rank: 2
+Location: (56, 21) ==> (91, 13)
+Reached? 0
+Winned? 0
+Total Running: 1977
+Reach Count: 19
+Win Count: 10
+
+Rank: 3
+Location: (31, 39) ==> (40, 13)
+Reached? 0
+Winned? 0
+Total Running: 2212
+Reach Count: 20
+Win Count: 9
+
+Rank: 4
+Location: (42, 39) ==> (43, 37)
+Reached? 0
+Winned? 0
+Total Running: 1997
+Reach Count: 15
+Win Count: 10
+
+In field process: detected 1 people reach in the next round! And rank 2 wins and kicks the ball to: (8, 28)
+
+
+Round 91
+Ball's location: (108, 13) ==> (8, 28)
+
+Rank: 0
+Location: (108, 38) ==> (108, 34)
+Reached? 0
+Winned? 0
+Total Running: 1724
+Reach Count: 19
+Win Count: 11
+
+Rank: 1
+Location: (47, 37) ==> (54, 13)
+Reached? 0
+Winned? 0
+Total Running: 2137
+Reach Count: 22
+Win Count: 12
+
+Rank: 2
+Location: (91, 13) ==> (108, 13)
+Reached? 1
+Winned? 1
+Total Running: 1994
+Reach Count: 20
+Win Count: 11
+
+Rank: 3
+Location: (40, 13) ==> (75, 13)
+Reached? 0
+Winned? 0
+Total Running: 2247
+Reach Count: 20
+Win Count: 9
+
+Rank: 4
+Location: (43, 37) ==> (55, 13)
+Reached? 0
+Winned? 0
+Total Running: 2033
+Reach Count: 15
+Win Count: 10
+
+
+
+Round 92
+Ball's location: (8, 28) ==> (8, 28)
+
+Rank: 0
+Location: (108, 34) ==> (106, 31)
+Reached? 0
+Winned? 0
+Total Running: 1729
+Reach Count: 19
+Win Count: 11
+
+Rank: 1
+Location: (54, 13) ==> (49, 28)
+Reached? 0
+Winned? 0
+Total Running: 2157
+Reach Count: 22
+Win Count: 12
+
+Rank: 2
+Location: (108, 13) ==> (90, 28)
+Reached? 0
+Winned? 0
+Total Running: 2027
+Reach Count: 20
+Win Count: 11
+
+Rank: 3
+Location: (75, 13) ==> (72, 28)
+Reached? 0
+Winned? 0
+Total Running: 2265
+Reach Count: 20
+Win Count: 9
+
+Rank: 4
+Location: (55, 13) ==> (52, 13)
+Reached? 0
+Winned? 0
+Total Running: 2036
+Reach Count: 15
+Win Count: 10
+
+In field process: detected 1 people reach in the next round! And rank 1 wins and kicks the ball to: (99, 27)
+
+
+Round 93
+Ball's location: (8, 28) ==> (99, 27)
+
+Rank: 0
+Location: (106, 31) ==> (83, 28)
+Reached? 0
+Winned? 0
+Total Running: 1755
+Reach Count: 19
+Win Count: 11
+
+Rank: 1
+Location: (49, 28) ==> (8, 28)
+Reached? 1
+Winned? 1
+Total Running: 2198
+Reach Count: 23
+Win Count: 13
+
+Rank: 2
+Location: (90, 28) ==> (44, 28)
+Reached? 0
+Winned? 0
+Total Running: 2073
+Reach Count: 20
+Win Count: 11
+
+Rank: 3
+Location: (72, 28) ==> (54, 28)
+Reached? 0
+Winned? 0
+Total Running: 2283
+Reach Count: 20
+Win Count: 9
+
+Rank: 4
+Location: (52, 13) ==> (46, 15)
+Reached? 0
+Winned? 0
+Total Running: 2044
+Reach Count: 15
+Win Count: 10
+
+
+
+Round 94
+Ball's location: (99, 27) ==> (99, 27)
+
+Rank: 0
+Location: (83, 28) ==> (83, 27)
+Reached? 0
+Winned? 0
+Total Running: 1756
+Reach Count: 19
+Win Count: 11
+
+Rank: 1
+Location: (8, 28) ==> (35, 27)
+Reached? 0
+Winned? 0
+Total Running: 2226
+Reach Count: 23
+Win Count: 13
+
+Rank: 2
+Location: (44, 28) ==> (71, 27)
+Reached? 0
+Winned? 0
+Total Running: 2101
+Reach Count: 20
+Win Count: 11
+
+Rank: 3
+Location: (54, 28) ==> (65, 27)
+Reached? 0
+Winned? 0
+Total Running: 2295
+Reach Count: 20
+Win Count: 9
+
+Rank: 4
+Location: (46, 15) ==> (56, 27)
+Reached? 0
+Winned? 0
+Total Running: 2066
+Reach Count: 15
+Win Count: 10
+
+In field process: detected 3 people reach in the next round! And rank 0 wins and kicks the ball to: (119, 30)
+
+
+Round 95
+Ball's location: (99, 27) ==> (119, 30)
+
+Rank: 0
+Location: (83, 27) ==> (99, 27)
+Reached? 1
+Winned? 1
+Total Running: 1772
+Reach Count: 20
+Win Count: 12
+
+Rank: 1
+Location: (35, 27) ==> (68, 27)
+Reached? 0
+Winned? 0
+Total Running: 2259
+Reach Count: 23
+Win Count: 13
+
+Rank: 2
+Location: (71, 27) ==> (99, 27)
+Reached? 1
+Winned? 0
+Total Running: 2129
+Reach Count: 21
+Win Count: 11
+
+Rank: 3
+Location: (65, 27) ==> (99, 27)
+Reached? 1
+Winned? 0
+Total Running: 2329
+Reach Count: 21
+Win Count: 9
+
+Rank: 4
+Location: (56, 27) ==> (73, 27)
+Reached? 0
+Winned? 0
+Total Running: 2083
+Reach Count: 15
+Win Count: 10
+
+In field process: detected 1 people reach in the next round! And rank 3 wins and kicks the ball to: (85, 55)
+
+
+Round 96
+Ball's location: (119, 30) ==> (85, 55)
+
+Rank: 0
+Location: (99, 27) ==> (100, 30)
+Reached? 0
+Winned? 0
+Total Running: 1776
+Reach Count: 20
+Win Count: 12
+
+Rank: 1
+Location: (68, 27) ==> (90, 30)
+Reached? 0
+Winned? 0
+Total Running: 2284
+Reach Count: 23
+Win Count: 13
+
+Rank: 2
+Location: (99, 27) ==> (114, 30)
+Reached? 0
+Winned? 0
+Total Running: 2147
+Reach Count: 21
+Win Count: 11
+
+Rank: 3
+Location: (99, 27) ==> (119, 30)
+Reached? 1
+Winned? 1
+Total Running: 2352
+Reach Count: 22
+Win Count: 10
+
+Rank: 4
+Location: (73, 27) ==> (91, 30)
+Reached? 0
+Winned? 0
+Total Running: 2104
+Reach Count: 15
+Win Count: 10
+
+
+
+Round 97
+Ball's location: (85, 55) ==> (85, 55)
+
+Rank: 0
+Location: (100, 30) ==> (85, 46)
+Reached? 0
+Winned? 0
+Total Running: 1807
+Reach Count: 20
+Win Count: 12
+
+Rank: 1
+Location: (90, 30) ==> (85, 47)
+Reached? 0
+Winned? 0
+Total Running: 2306
+Reach Count: 23
+Win Count: 13
+
+Rank: 2
+Location: (114, 30) ==> (102, 35)
+Reached? 0
+Winned? 0
+Total Running: 2164
+Reach Count: 21
+Win Count: 11
+
+Rank: 3
+Location: (119, 30) ==> (104, 38)
+Reached? 0
+Winned? 0
+Total Running: 2375
+Reach Count: 22
+Win Count: 10
+
+Rank: 4
+Location: (91, 30) ==> (85, 45)
+Reached? 0
+Winned? 0
+Total Running: 2125
+Reach Count: 15
+Win Count: 10
+
+In field process: detected 4 people reach in the next round! And rank 1 wins and kicks the ball to: (37, 21)
+
+
+Round 98
+Ball's location: (85, 55) ==> (37, 21)
+
+Rank: 0
+Location: (85, 46) ==> (85, 55)
+Reached? 1
+Winned? 0
+Total Running: 1816
+Reach Count: 21
+Win Count: 12
+
+Rank: 1
+Location: (85, 47) ==> (85, 55)
+Reached? 1
+Winned? 1
+Total Running: 2314
+Reach Count: 24
+Win Count: 14
+
+Rank: 2
+Location: (102, 35) ==> (97, 40)
+Reached? 0
+Winned? 0
+Total Running: 2174
+Reach Count: 21
+Win Count: 11
+
+Rank: 3
+Location: (104, 38) ==> (85, 55)
+Reached? 1
+Winned? 0
+Total Running: 2411
+Reach Count: 23
+Win Count: 10
+
+Rank: 4
+Location: (85, 45) ==> (85, 55)
+Reached? 1
+Winned? 0
+Total Running: 2135
+Reach Count: 16
+Win Count: 10
+
+
+
+Round 99
+Ball's location: (37, 21) ==> (37, 21)
+
+Rank: 0
+Location: (85, 55) ==> (85, 51)
+Reached? 0
+Winned? 0
+Total Running: 1820
+Reach Count: 21
+Win Count: 12
+
+Rank: 1
+Location: (85, 55) ==> (84, 30)
+Reached? 0
+Winned? 0
+Total Running: 2340
+Reach Count: 24
+Win Count: 14
+
+Rank: 2
+Location: (97, 40) ==> (96, 26)
+Reached? 0
+Winned? 0
+Total Running: 2189
+Reach Count: 21
+Win Count: 11
+
+Rank: 3
+Location: (85, 55) ==> (79, 21)
+Reached? 0
+Winned? 0
+Total Running: 2451
+Reach Count: 23
+Win Count: 10
+
+Rank: 4
+Location: (85, 55) ==> (81, 39)
+Reached? 0
+Winned? 0
+Total Running: 2155
+Reach Count: 16
+Win Count: 10
+
