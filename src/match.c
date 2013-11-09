@@ -194,37 +194,33 @@ int main(int argc, char *argv[]){
 				}
 			}
 
-			// Initialize the Communicators:
-
-			// Extract the original group handle:
-			MPI_Comm_group(MPI_COMM_WORLD, &originalGroup);
-
+			// For field process: Initialize the playersInThisField and its count:
 			if (currentRound < NUM_OF_ROUNDS){
-				if (rank < TEAM_SIZE || rank == FIELD_LEFT_PROCESS){
+				if (rank == FIELD_LEFT_PROCESS){
 					// [0, 1, 2, 3, 4, FIELD_LEFT_PROCESS]
 					int j;
 					for(j = 0; j < TEAM_SIZE; j++){
-						playersSameHalf[j] = i;
+						playersInThisField[j] = i;
 					}
-					playersSameHalf[j] = FIELD_LEFT_PROCESS
-				} else{
+					playersInThisField[j] = FIELD_LEFT_PROCESS
+				} else if (rank == FIELD_RIGHT_PROCESS){
 					// [5, 6, 7, 8, 9, FIELD_RIGHT_PROCESS]
 					int j;
 					for(j = 0; j < TEAM_SIZE; j++){
-						playersSameHalf[j] = j + TEAM_SIZE;
+						playersInThisField[j] = j + TEAM_SIZE;
 					}
-					playersSameHalf[j] = FIELD_RIGHT_PROCESS;
+					playersInThisField[j] = FIELD_RIGHT_PROCESS;
 				}
 
 			} else{
-				if (rank >= TEAM_SIZE || rank == FIELD_LEFT_PROCESS){
+				if (rank == FIELD_LEFT_PROCESS){
 					// [5, 6, 7, 8, 9, FIELD_LEFT_PROCESS]
 					int j;
 					for(j = 0; j < TEAM_SIZE; j++){
-						playersSameHalf[j] = j + TEAM_SIZE;
+						playersInThisField[j] = j + TEAM_SIZE;
 					}
-					playersSameHalf[j] = FIELD_LEFT_PROCESS;
-				}else{
+					playersInThisField[j] = FIELD_LEFT_PROCESS;
+				}else if (rank == FIELD_RIGHT_PROCESS){
 					// [0, 1, 2, 3, 4, FIELD_RIGHT_PROCESS]
 					int j;
 					for(j = 0; j < TEAM_SIZE; j++){

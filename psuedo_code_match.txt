@@ -4,6 +4,7 @@ If (fist round or isScored){
 
 		- Field process:
 			Initialize ball position: (64, 32)
+			Initialize their playersInThisField
 		- Player process:
 			Initialize player position
 			If Round1: 
