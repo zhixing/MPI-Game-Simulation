@@ -9,6 +9,6 @@ Files contained:
 	simulates a basketball match between two teams
 - outputs:
 	- output file in the name of: 
-	- <task>_<number of rounds>_<max steps in each round>_<brief or detail>.out
+	- [task]_[number_of_rounds]_[max_steps_in_each_round>_<brief_or_detail>.out
 		- brief: output as required by the question
 		- detail: output in full details
