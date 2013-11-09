@@ -34,7 +34,6 @@ typedef struct{
 	int isBallWinned;
 	int runnedDistance;
 	int countReachBall;
-	int countWinBall;
 } Player;
 
 typedef struct{
