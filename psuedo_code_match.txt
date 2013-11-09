@@ -15,7 +15,7 @@ else{
 	In field process: (Assume the field knows the position of 10 players)
 		Update: 
 			- playersInMyRange[]
-			- count of players in my range
+			- the count of players in my range
 }
 	Players update their field-in-charge. Their field-in-charge remains the SAME throughout the round.
 
@@ -29,12 +29,14 @@ else{
 	Players tell field-in-charge their ball challenge. (If not reached, challenge is 0)
 	Two fields gathers their members' ball challenges.
 
-	Two field1 sends all its challenges to field0.
+	field1 sends all its challenges to field0.
 	Field0 selects the winner who has the largest challenge. (or a ramdon if there're multiple largest challenges)
 	Field0 tells Field1 who is the winner.
 
 	Two fields broadcast the winner info to its members.
 	The players gets the winner info.
+
+// Up to here:
 
 	The players sends their new location to their field-in-charge.
 	The fields gets the new location of their members.
