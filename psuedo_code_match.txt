@@ -6,12 +6,12 @@ Maintain 2 communicators:
 
 In each loop:
 
-If Round 1 or isScored{
+If fist round or isScored{
 
 		- Field process:
-			Allocate ball position (64, 32)
+			Initialize ball position: (64, 32)
 		- Player process:
-			Initialize position
+			Initialize player position
 			If Round1: Initialize Player Variable with skills
 		- Initialize Communicator
 }
@@ -25,16 +25,18 @@ else{
 		Create two groups
 }
 	
-	Two fields update ball location to their respective players. (broadcast)
+	Two fields broadcase ball location to their respective players.
 	Players gets the ball location.
 
 	Players run towards ball for a distance: [0, step]. Some players may reach ball.
 
-	Players broadcast their ball challenge. (If not reached, is 0)
-	Two fields get their members' ball challenge.
+	Players tell fields their ball challenge. (If not reached, challenge is 0)
+	Two fields gathers their members' ball challenge.
 
-	Two field where the ball doesn't belong tells its members' challenge to the other field.
-	The field where the ball belongs chooses one winner. 
+	Two field where the ball doesn't belong to tells its members' challenge to the other field.
+	The field where the ball belongs to receives the other field's challenges.
+
+	The above field chooses one winner.
 
 	The above field tells the other field about the winner.
 
@@ -44,31 +46,35 @@ else{
 	The members sends their new location to their field.
 	The fields gets the new location of their members.
 
-	The fields exchages its member's locations
+	The fields exchages its member's locations.
 
-	The winner's field sends the locations of the winner's team to the winner.
-	Winner receives the locations of its teammates.
+	Now, everybody (both the players, and the fields) knows the winner info:
 
-	Winner will:
-		- If the basket is within 25 steps: 
-			- Shoot
-		- If the basket is without 25 steps: 
-			- Pass the ball to the nearest teammate
+	If there's a winner:
 
-	The ball will:
-		- Reach the destination:
-			- If the destination is the basket: 
-				- isScored = true
-				- add score
-		- Miss the destination: 
-			- Goes to 8 feet of the destination
-			- If goes without range of court: put the ball to the center
+			The winner's field sends the locations of the winner's team to the winner.
+			Winner receives the locations of its teammates.
 
-	The winner pass the new ball location to the field (point-to-point)
-	The winner's field receives the location of the ball.
+			Winner will:
+				- If the basket is within 25 steps: 
+					- Shoot
+				- If the basket is without 25 steps: 
+					- Pass the ball to the nearest teammate
 
-	The winner's field pass the new ball location to the other field (point-to-point)
-	The other field receives the new ball location.
+			The ball will:
+				- Reach the destination:
+					- If the destination is the basket: 
+						- isScored = true
+						- add score
+				- Miss the destination: 
+					- Goes to 8 feet of the destination
+					- If goes without range of court: put the ball to the center
+
+			The winner pass the new ball location to the field (point-to-point)
+			The winner's field receives the location of the ball.
+
+			The winner's field pass the new ball location to the other field (point-to-point)
+			The other field receives the new ball location.
 
 	Players sends the following info to their field-in-charge:
 		- initial location
