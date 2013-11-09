@@ -6,7 +6,7 @@ Maintain 2 communicators:
 
 In each loop:
 
-If fist round or isScored{
+If (fist round or isScored){
 
 		- Field process:
 			Initialize ball position: (64, 32)
