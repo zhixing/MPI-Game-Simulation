@@ -1,0 +1,32 @@
+
+In each round:
+
+	Field broadcast the ball's location.
+	Players get the ball's location.
+
+	Players run towars the ball.
+	Players may reach the ball.
+
+	Players sends the "reached" data to the field;
+	Field gathers the "reached" data
+
+	Field chooses a winner.
+
+	Field broadcast the winner.
+	Players get the winner.
+
+	The winner will kick the ball to a random lodation.
+
+	If there's a winner:
+		The winner scatters the new location of the ball.
+		The field will receive the new location and update its ball location
+
+	Players sends their personal particulars to the field.
+		- initial position
+		- current position
+		- reached?
+		- winned?
+		- runned distance
+		- reachBall count
+		- win count
+	The field gathers the update and prints out the update

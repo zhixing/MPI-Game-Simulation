@@ -1,0 +1,87 @@
+In each round:
+
+Maintain 2 communicators:
+	- field0: players that're located at field0
+	- field1: players that're located at field1
+
+In each loop:
+
+If Round 1 or isScored{
+
+		- Field process:
+			Allocate ball position (64, 32)
+		- Player process:
+			Initialize position
+			If Round1: Initialize Player Variable with skills
+		- Initialize Communicator
+}
+
+else{
+
+	In field process:
+		Get handle
+		If a player's location is in its part of the field, add to field0[]
+		If not, add to field1[]
+		Create two groups
+}
+	
+	Two fields update ball location to their respective players. (broadcast)
+	Players gets the ball location.
+
+	Players run towards ball for a distance: [0, step]. Some players may reach ball.
+
+	Players broadcast their ball challenge. (If not reached, is 0)
+	Two fields get their members' ball challenge.
+
+	Two field where the ball doesn't belong tells its members' challenge to the other field.
+	The field where the ball belongs chooses one winner. 
+
+	The above field tells the other field about the winner.
+
+	Two fields broadcast the winner info to its members.
+	The members gets the winner info.
+
+	The members sends their new location to their field.
+	The fields gets the new location of their members.
+
+	The fields exchages its member's locations
+
+	The winner's field sends the locations of the winner's team to the winner.
+	Winner receives the locations of its teammates.
+
+	Winner will:
+		- If the basket is within 25 steps: 
+			- Shoot
+		- If the basket is without 25 steps: 
+			- Pass the ball to the nearest teammate
+
+	The ball will:
+		- Reach the destination:
+			- If the destination is the basket: 
+				- isScored = true
+				- add score
+		- Miss the destination: 
+			- Goes to 8 feet of the destination
+			- If goes without range of court: put the ball to the center
+
+	The winner pass the new ball location to the field (point-to-point)
+	The winner's field receives the location of the ball.
+
+	The winner's field pass the new ball location to the other field (point-to-point)
+	The other field receives the new ball location.
+
+	Players sends the following info to their field-in-charge:
+		- initial location
+		- final location
+		- reached?
+		- kicked?
+		- ball challenge
+		- shoot target location: (-1, -1) if didn't reach/win
+
+	field1 send the above info to field0
+
+	field0 prints out the following information:
+		- round number
+		- team scores
+		- new ball location
+		- each member's particulars
