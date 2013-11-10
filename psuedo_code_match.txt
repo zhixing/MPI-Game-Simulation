@@ -36,7 +36,6 @@ else{
 	Two fields broadcast the winner info to its members.
 	The players gets the winner info.
 
-// Up to here:
 
 	The players sends their new location to their field-in-charge.
 	The fields gets the new location of their members.

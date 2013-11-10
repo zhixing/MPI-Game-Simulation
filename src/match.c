@@ -282,138 +282,139 @@ int main(int argc, char *argv[]){
 		else{
 
 			// At the beginning of a round, each field has a clear picture of 10 player's location.
-			// Field process:
+			// Field process: update its players and the count
 			if (rank == FIELD_LEFT_PROCESS || rank == FIELD_RIGHT_PROCESS){
 				int i;
 				numPlayersInThisField = 0;
 
-				sendBuffer[0] = ball.currentPosition.x;
-				sendBuffer[1] = ball.currentPosition.y;
-
 				// Update the playersInThisField[] and the count
 				for(i = 0; i < NUM_OF_PLAYERS; i++){
 					if (getFieldBelongsTo(locationRecords[i]) == rank){
-					
 						playersInThisField[numPlayersInThisField++] = i;
-					
-						// If found one, broadcast the ball's location
-						MPI_Isend(&sendBuffer, 2, MPI_INT, i, TAG_BALL_LOCATION, MPI_COMM_WORLD, &sendRequest);
 					}
 				}
 				// printf("In field %d, my incharge:", rank);
-
-				int challenges[NUM_OF_PLAYERS] = {0};
-				int m;
-				for(m = 0; m < numPlayersInThisField; m++){
-					// Receive the challenge from playersInThisField[m]
-					MPI_Recv(&receiveBuffer, 1, MPI_INT, playersInThisField[m], TAG_SEND_CHALLENGE, MPI_COMM_WORLD, &status);
-					challenges[playersInThisField[m]] = receiveBuffer[0];
-				}
-
-				int winner;
-				if (rank == FIELD_RIGHT_PROCESS){
-					// 	FIELD_RIGHT_PROCESS sends all its challenges to FIELD_LEFT_PROCESS.
-					MPI_Isend(&challenges, NUM_OF_PLAYERS, MPI_INT, FIELD_LEFT_PROCESS, TAG_EXCHANGE_CHALLENGE, MPI_COMM_WORLD, &sendRequest);
-
-					// Get the winner from FIELD_LEFT_PROCESS(because it has the max challenge):
-					MPI_Recv(&receiveBuffer, NUM_OF_PLAYERS, MPI_INT, FIELD_LEFT_PROCESS, TAG_EXCHANGE_WINNER, MPI_COMM_WORLD, &status);
-					winner = receiveBuffer[0];
-				} else{
-					MPI_Recv(&receiveBuffer, NUM_OF_PLAYERS, MPI_INT, FIELD_RIGHT_PROCESS, TAG_EXCHANGE_CHALLENGE, MPI_COMM_WORLD, &status);
-					
-					int k;
-					for(k = 0; k < NUM_OF_PLAYERS; k++){
-						if (receiveBuffer[k] != 0){
-							challenges[k] = receiveBuffer[k];
-						}
-					}
-
-					winner = getMaxInArray(challenges, NUM_OF_PLAYERS);
-
-					int isWinnerFound = 0;
-					printf("Complete Challenges:");
-					for(k = 0; k < NUM_OF_PLAYERS; k++){
-						if (challenges[k] != 0){
-							isWinnerFound = 1;
-						}
-						printf("%d ", challenges[k]);
-					}
-
-					winner = isWinnerFound ? winner : INVALID_PROCESS;
-
-					MPI_Isend(&winner, 1, MPI_INT, FIELD_RIGHT_PROCESS, TAG_EXCHANGE_WINNER, MPI_COMM_WORLD, &sendRequest);
-				}
-
-				// Broadcast the winner info to all process:
-				for (m = 0; m < numPlayersInThisField; m++){
-					MPI_Isend(&winner, 1, MPI_INT, playersInThisField[m], TAG_BROADCAST_WINNER, MPI_COMM_WORLD, &sendRequest);
-				}
-
-				if (winner != INVALID_PROCESS){
-
-
-					
-
-				}
-
 			}
+		} // End of "else" at the beginning of round
 
-			// Player process:
-			else{
-				self.lastPosition = self.currentPosition;
-				fieldInCharge = getFieldBelongsTo(self.currentPosition);
-				
-				// Get the ball location.
-				MPI_Recv(&receiveBuffer, 2, MPI_INT, fieldInCharge, TAG_BALL_LOCATION, MPI_COMM_WORLD, &status);
-				ball.currentPosition.x = receiveBuffer[0];
-				ball.currentPosition.y = receiveBuffer[1];
+		// Normal procedures.
 
-				// Run towards the ball:
-				int distanceInCurrentRound = getRandomNumberWithinRange(0, self.speed);
-				if (distanceInCurrentRound != 0){
-					runTowardsBall(self, ball, distanceInCurrentRound);
-				}
-
-				int challenge = getRandomNumberWithinRange(1, 10) * self.dribbling;
-				challenge = self.isBallReached ? challenge : 0;
-
-				// Send the challenge to field-in-charge:
-				MPI_Isend(&sendBuffer, 1, MPI_INT, i, TAG_SEND_CHALLENGE, MPI_COMM_WORLD, &sendRequest);
-
-				// Receive the winner info:
-				MPI_Recv(&receiveBuffer, 1, MPI_INT, fieldInCharge, TAG_BROADCAST_WINNER, MPI_COMM_WORLD, &status);
-				int winner = receiveBuffer[0];
-
-				// If there's a winner:
-				if (winner != INVALID_PROCESS){
-
-
-
-
-
-				}
-
-			}
-
-
-		} // End of else loop. One round ends
-
-		// Field process:
+		// Field Process
 		if (rank == FIELD_LEFT_PROCESS || rank == FIELD_RIGHT_PROCESS){
-			
-		}
+
+			// Broadcast ball location:
+			sendBuffer[0] = ball.currentPosition.x;
+			sendBuffer[1] = ball.currentPosition.y;
+			int m;
+			for(m = 0; m < numPlayersInThisField; m++){
+				MPI_Isend(&sendBuffer, 2, MPI_INT, playersInThisField[m], TAG_BALL_LOCATION, MPI_COMM_WORLD, &sendRequest);
+			}
+
+			int challenges[NUM_OF_PLAYERS] = {0};
+			for(m = 0; m < numPlayersInThisField; m++){
+				// Receive the challenge from playersInThisField[m]
+				MPI_Recv(&receiveBuffer, 1, MPI_INT, playersInThisField[m], TAG_SEND_CHALLENGE, MPI_COMM_WORLD, &status);
+				challenges[playersInThisField[m]] = receiveBuffer[0];
+			}
+
+			int winner;
+			if (rank == FIELD_RIGHT_PROCESS){
+				// 	FIELD_RIGHT_PROCESS sends all its challenges to FIELD_LEFT_PROCESS.
+				MPI_Isend(&challenges, NUM_OF_PLAYERS, MPI_INT, FIELD_LEFT_PROCESS, TAG_EXCHANGE_CHALLENGE, MPI_COMM_WORLD, &sendRequest);
+
+				// Get the winner from FIELD_LEFT_PROCESS(because it has the max challenge):
+				MPI_Recv(&winner, NUM_OF_PLAYERS, MPI_INT, FIELD_LEFT_PROCESS, TAG_EXCHANGE_WINNER, MPI_COMM_WORLD, &status);
+			} 
+
+			/// FIELD_LEFT_PROCESS
+			else{
+				MPI_Recv(&receiveBuffer, NUM_OF_PLAYERS, MPI_INT, FIELD_RIGHT_PROCESS, TAG_EXCHANGE_CHALLENGE, MPI_COMM_WORLD, &status);
+				
+				int k;
+				for(k = 0; k < NUM_OF_PLAYERS; k++){
+					if (receiveBuffer[k] != 0){
+						challenges[k] = receiveBuffer[k];
+					}
+				}
+
+				winner = getMaxInArray(challenges, NUM_OF_PLAYERS);
+
+				// Check whether there's a winner
+				// If there's a winner, there must be a non-zero challenge.
+				int isWinnerFound = 0;
+				printf("Complete record of Challenges:");
+				for(k = 0; k < NUM_OF_PLAYERS; k++){
+					if (challenges[k] != 0){
+						isWinnerFound = 1;
+					}
+					printf("%d ", challenges[k]);
+				}
+
+				winner = isWinnerFound ? winner : INVALID_PROCESS;
+
+				MPI_Isend(&winner, 1, MPI_INT, FIELD_RIGHT_PROCESS, TAG_EXCHANGE_WINNER, MPI_COMM_WORLD, &sendRequest);
+			}
+
+			// Two field processes broadcast the winner info to all process:
+			for (m = 0; m < numPlayersInThisField; m++){
+				MPI_Isend(&winner, 1, MPI_INT, playersInThisField[m], TAG_BROADCAST_WINNER, MPI_COMM_WORLD, &sendRequest);
+			}
+
+
+
+			if (winner != INVALID_PROCESS){
+				
+
+
+
+			}
+
+		} // End of field process
 
 		// Player process:
 		else{
-
 			self.lastPosition = self.currentPosition;
 			self.isBallReached = 0;
 			self.isBallWinned = 0;
+			fieldInCharge = getFieldBelongsTo(self.currentPosition);
+			
+			// Get the ball location.
+			MPI_Recv(&receiveBuffer, 2, MPI_INT, fieldInCharge, TAG_BALL_LOCATION, MPI_COMM_WORLD, &status);
+			ball.currentPosition.x = receiveBuffer[0];
+			ball.currentPosition.y = receiveBuffer[1];
+
+			// Run towards the ball:
+			int distanceInCurrentRound = getRandomNumberWithinRange(0, self.speed);
+			if (distanceInCurrentRound != 0){
+				runTowardsBall(self, ball, distanceInCurrentRound);
+			}
+
+			int challenge = getRandomNumberWithinRange(1, 10) * self.dribbling;
+			challenge = self.isBallReached ? challenge : 0;
+
+			// Send the challenge to field-in-charge:
+			MPI_Isend(&challenge, 1, MPI_INT, i, TAG_SEND_CHALLENGE, MPI_COMM_WORLD, &sendRequest);
+
+			// Receive the winner info:
+			int winner;
+			MPI_Recv(&winner, 1, MPI_INT, fieldInCharge, TAG_BROADCAST_WINNER, MPI_COMM_WORLD, &status);
+
+			// Update new location to the field-in-charge
 
 
-		}
+			// If there's a winner:
+			if (winner != INVALID_PROCESS){
 
-	} // End of for loop. All round ends
+
+
+
+
+			}
+
+		} // End of player process
+
+
+	} // End of for loop. One round ends
 
 	return 0;
 }
