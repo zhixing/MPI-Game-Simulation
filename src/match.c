@@ -32,6 +32,8 @@
 #define TAG_EXCHANGE_WINNER 3
 #define TAG_EXCHANGE_CHALLENGE 4
 #define TAG_BROADCAST_WINNER 5
+#define TAG_UPDATE_LOCATION 6
+#define TAG_EXCHANGE_ALL_LOCATION 7
 
 
 typedef struct{
@@ -190,9 +192,17 @@ int main(int argc, char *argv[]){
 	Position locationRecords[NUM_OF_PLAYERS];
 
 	MPI_Status status;
-	MPI_Request sendRequest, receiveRequest;  
-
+	MPI_Request sendRequest, receiveRequest;
 	int fieldInCharge;
+	int FIELD_ME, FIELD_THE_OTHER;
+
+	if (rank == FIELD_LEFT_PROCESS){
+		FIELD_ME = FIELD_LEFT_PROCESS;
+		FIELD_THE_OTHER = FIELD_RIGHT_PROCESS;
+	} else if (rank == FIELD_RIGHT_PROCESS){
+		FIELD_ME = FIELD_RIGHT_PROCESS;
+		FIELD_THE_OTHER = FIELD_LEFT_PROCESS;
+	}
 
 	for (currentRound = 0; currentRound < NUM_OF_ROUNDS * 2; currentRound++){
 
@@ -310,9 +320,9 @@ int main(int argc, char *argv[]){
 				MPI_Isend(&sendBuffer, 2, MPI_INT, playersInThisField[m], TAG_BALL_LOCATION, MPI_COMM_WORLD, &sendRequest);
 			}
 
+			// Receive the challenge from playersInThisField[m]
 			int challenges[NUM_OF_PLAYERS] = {0};
 			for(m = 0; m < numPlayersInThisField; m++){
-				// Receive the challenge from playersInThisField[m]
 				MPI_Recv(&receiveBuffer, 1, MPI_INT, playersInThisField[m], TAG_SEND_CHALLENGE, MPI_COMM_WORLD, &status);
 				challenges[playersInThisField[m]] = receiveBuffer[0];
 			}
@@ -360,6 +370,46 @@ int main(int argc, char *argv[]){
 				MPI_Isend(&winner, 1, MPI_INT, playersInThisField[m], TAG_BROADCAST_WINNER, MPI_COMM_WORLD, &sendRequest);
 			}
 
+			// Receive the updated location from my players.
+			for (m = 0; m < numPlayersInThisField; m++){
+				MPI_Recv(&receiveBuffer, 2, MPI_INT, playersInThisField[m], TAG_UPDATE_LOCATION, MPI_COMM_WORLD, &status);
+				Position pos;
+				pos.x = receiveBuffer[0];
+				pos.y = receiveBuffer[1];
+				locationRecords[playersInThisField[m]];
+			}
+
+			// Two fields exchange the location with each other:
+			MPI_Isend(&locationRecords, 2 * NUM_OF_PLAYERS, MPI_INT, FIELD_THE_OTHER, TAG_EXCHANGE_ALL_LOCATION, MPI_COMM_WORLD, &sendRequest);
+			MPI_Recv(&receiveBuffer, 2 * NUM_OF_PLAYERS, MPI_INT, FIELD_THE_OTHER, TAG_EXCHANGE_ALL_LOCATION, MPI_COMM_WORLD, &status);
+
+			// Read the receiveBuffer:
+
+			Position otherPositions[NUM_OF_PLAYERS];
+			for (m = 0; m < NUM_OF_PLAYERS; m++){
+				Position pos;
+				pos.x = receiveBuffer[m * 2];
+				pos.y = receiveBuffer[m * 2 + 1];
+				otherPositions[m] = pos;
+			}
+
+			// Merge with self:
+
+			for(m = 0; m < numPlayersInThisField; m++){
+				int index = playersInThisField[m];
+				otherPositions[index] = locationRecords[index];
+			}
+
+			// Assign value:
+			for (m = 0; m < NUM_OF_PLAYERS; m++){
+				locationRecords[m] = otherPositions[m];
+			}
+
+			printf("In rank %d, the merged new location is:", FIELD_ME);
+			for (m = 0; m < NUM_OF_PLAYERS; m++){
+				Position pos = locationRecords[m];
+				printf("(%d, %d) ", pos.x, pos.y);
+			}
 
 
 			if (winner != INVALID_PROCESS){
@@ -400,6 +450,9 @@ int main(int argc, char *argv[]){
 			MPI_Recv(&winner, 1, MPI_INT, fieldInCharge, TAG_BROADCAST_WINNER, MPI_COMM_WORLD, &status);
 
 			// Update new location to the field-in-charge
+			zopeBuffer[0] = self.currentPosition.x;
+			zopeBuffer[1] = self.currentPosition.y;
+			MPI_Isend(&zopeBuffer, 2, MPI_INT, fieldInCharge, TAG_UPDATE_LOCATION, MPI_COMM_WORLD, &sendRequest);
 
 
 			// If there's a winner:
