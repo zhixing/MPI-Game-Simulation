@@ -13,6 +13,7 @@
 #define FIELD_LEFT_PROCESS 10
 #define FIELD_RIGHT_PROCESS 11
 #define INVALID_PROCESS -1
+#define INVALID_CHALLENGE -1
 #define NUM_OF_ROUNDS 9
 #define NUM_OF_PLAYERS 10
 #define NUM_OF_SKILLS 3
@@ -27,6 +28,7 @@
 #define MIN_3_POINT_DISTANCE 25
 #define BALL_MISS_ROLL_RANGE 8
 #define BALL_DRIBBLING_ROLL_DISTANCE 3
+#define PLAYER_SUMMARY_SIZE 10
 
 #define GOAL_LEFT_X 0
 #define GOAL_LEFT_Y 32
@@ -48,6 +50,8 @@
 #define TAG_TEAMMATES_LOCATIONS 8
 #define TAG_PASS_BALL 9
 #define TAG_BALL_PASSED 10
+#define TAG_REPORT_SUMMARY 11
+#define TAG_EXCHANGE_SUMMARY 12
 
 
 typedef struct{
@@ -431,7 +435,7 @@ int main(int argc, char *argv[]){
 			}
 
 			// Receive the challenge from playersInThisField[m]
-			int challenges[NUM_OF_PLAYERS] = {0};
+			int challenges[NUM_OF_PLAYERS] = {INVALID_CHALLENGE};
 			for(m = 0; m < numPlayersInThisField; m++){
 				MPI_Recv(&receiveBuffer, 1, MPI_INT, playersInThisField[m], TAG_SEND_CHALLENGE, MPI_COMM_WORLD, &status);
 				challenges[playersInThisField[m]] = receiveBuffer[0];
@@ -549,16 +553,16 @@ int main(int argc, char *argv[]){
 					
 					// Receive where the winner wants to pass the ball:
 					MPI_Recv(&receiveBuffer, 5, MPI_INT, FIELD_THE_OTHER, TAG_PASS_BALL, MPI_COMM_WORLD, &status);
-					Position newPosition;
-					dstPosition.x = receiveBuffer[0];
-					dstPosition.y = receiveBuffer[1];
+					Position desiredDestination;
+					desiredDestination.x = receiveBuffer[0];
+					desiredDestination.y = receiveBuffer[1];
 					srcPosition.x = receiveBuffer[2];
 					srcPosition.y = receiveBuffer[3];
 					int shooting = receiveBuffer[4];
 
-					newPosition = passBallToNewPosition(dstPosition, srcPosition, shooting);
+					Position finalDestination = passBallToNewPosition(desiredDestination, srcPosition, shooting);
 					ball.lastPosition = ball.currentPosition;
-					ball.currentPosition = newPosition;
+					ball.currentPosition = finalDestination;
 					int ballFlyDistance = getDistance(ball.currentPosition, ball.lastPosition);
 
 					if (isLeftGoal(ball.currentPosition)){
@@ -608,6 +612,23 @@ int main(int argc, char *argv[]){
 				}
 			} // End of "if there's a winner"
 
+			// Gather's summary from players:
+			// initial location, final location, reached?, kicked?, ball challenge, shoot target location. (-1, -1) if didn't reach/win
+			int playerSummary[PLAYER_SUMMARY_SIZE * NUM_OF_PLAYERS]; // 10 * 10
+			for (m = 0; m < numPlayersInThisField; m++){
+				int index = playersInThisField[m];
+				MPI_Recv(&receiveBuffer, PLAYER_SUMMARY_SIZE, MPI_INT, index, TAG_REPORT_SUMMARY, MPI_COMM_WORLD, &status);
+				
+				int p;
+				for (p = 0; p < PLAYER_SUMMARY_SIZE; p++){
+					playerSummary[index * PLAYER_SUMMARY_SIZE + p] = receiveBuffer[p];
+				}
+			}
+
+			for ()
+
+
+
 		} // End of field process
 
 		// Player process:
@@ -632,7 +653,7 @@ int main(int argc, char *argv[]){
 			}
 
 			int challenge = getRandomNumberWithinRange(1, 10) * self.dribbling;
-			challenge = self.isBallReached ? challenge : 0;
+			challenge = self.isBallReached ? challenge : INVALID_CHALLENGE;
 
 			// Send the challenge to field-in-charge:
 			MPI_Isend(&challenge, 1, MPI_INT, i, TAG_SEND_CHALLENGE, MPI_COMM_WORLD, &sendRequest);
@@ -647,6 +668,9 @@ int main(int argc, char *argv[]){
 			MPI_Isend(&zopeBuffer, 2, MPI_INT, fieldInCharge, TAG_UPDATE_LOCATION, MPI_COMM_WORLD, &sendRequest);
 
 			// If there's a winner, AND the winner is me. YAY!
+			Position desiredDestination;
+			desiredDestination.x = -1;
+			desiredDestination.y = -1;
 			if (winner != INVALID_PROCESS && winner == rank){
 
 				self.isBallWinned = 1;
@@ -665,13 +689,13 @@ int main(int argc, char *argv[]){
 				int teammates[TEAM_SIZE];
 				computeTeammates(teammates);
 
-				Position goalPosition = getOfGoal(currentRound, rank);
-				int goalDistance = getDistance(goalPosition, self.currentPosition);
+				Position desiredDestination = getOfGoal(currentRound, rank);
+				int goalDistance = getDistance(desiredDestination, self.currentPosition);
 
 				// Shoot the ball if I'm close enough.
 				if(goalDistance <= MIN_SHOOTING_DISTANCE){
-					sendBuffer[0] = goalPosition.x;
-					sendBuffer[1] = goalPosition.y;
+					sendBuffer[0] = desiredDestination.x;
+					sendBuffer[1] = desiredDestination.y;
 					sendBuffer[2] = self.currentPosition.x;
 					sendBuffer[3] = self.currentPosition.y;
 					sendBuffer[4] = self.shooting;
@@ -698,8 +722,9 @@ int main(int argc, char *argv[]){
 					}
 
 					if (teammateCloserToBasket != -1){
-						sendBuffer[0] = teammatesLocation[teammateCloserToBasket].x;
-						sendBuffer[1] = teammatesLocation[teammateCloserToBasket].y;
+						desiredDestination = teammatesLocation[teammateCloserToBasket];
+						sendBuffer[0] = desiredDestination.x;
+						sendBuffer[1] = desiredDestination.y;
 						sendBuffer[2] = self.currentPosition.x;
 						sendBuffer[3] = self.currentPosition.y;
 						sendBuffer[4] = self.shooting;
@@ -708,8 +733,6 @@ int main(int argc, char *argv[]){
 
 					// If not, pass the ball to the front for BALL_DRIBBLING_ROLL_DISTANCE steps.
 					else{
-						Position newPos;
-
 						int directionX = (goalPosition.x - self.currentPosition.x) > 0 ? 1 : -1;
 						int directionY = (goalPosition.y - self.currentPosition.y) > 0 ? 1 : -1;
 						
@@ -717,17 +740,17 @@ int main(int argc, char *argv[]){
 						int distanceY = abs(goalPosition.y - self.currentPosition.y);
 						
 						if (distanceX > BALL_DRIBBLING_ROLL_DISTANCE){
-							newPos.x = self.currentPosition.x + directionX * BALL_DRIBBLING_ROLL_DISTANCE;
-							newPos.y = self.currentPosition.y; 
+							desiredDestination.x = self.currentPosition.x + directionX * BALL_DRIBBLING_ROLL_DISTANCE;
+							desiredDestination.y = self.currentPosition.y; 
 						} else if (distanceY > BALL_DRIBBLING_ROLL_DISTANCE){
-							newPos.x = self.currentPosition.x;
-							newPos.y = self.currentPosition.y + directionY * BALL_DRIBBLING_ROLL_DISTANCE;
+							desiredDestination.x = self.currentPosition.x;
+							desiredDestination.y = self.currentPosition.y + directionY * BALL_DRIBBLING_ROLL_DISTANCE;
 						} else{
-							newPos.x = self.currentPosition.x;
-							newPos.y = self.currentPosition.y;
+							desiredDestination.x = self.currentPosition.x;
+							desiredDestination.y = self.currentPosition.y;
 						}
-						sendBuffer[0] = newPos.x;
-						sendBuffer[1] = newPos.y;
+						sendBuffer[0] = desiredDestination.x;
+						sendBuffer[1] = desiredDestination.y;
 						sendBuffer[2] = self.currentPosition.x;
 						sendBuffer[3] = self.currentPosition.y;
 						sendBuffer[4] = self.shooting;
@@ -739,16 +762,23 @@ int main(int argc, char *argv[]){
 
 			// Send the summary of personal info to field-in-charge:
 			// initial location, final location, reached?, kicked?, ball challenge, shoot target location. (-1, -1) if didn't reach/win
-			zopeBuffer[] =
-			zopeBuffer[] = 
-			zopeBuffer[] = 
-			zopeBuffer[] = 
-			zopeBuffer[] = 
-			zopeBuffer[] = 
-			zopeBuffer[] = 
-			zopeBuffer[] = 
+			zopeBuffer[0] = rank;
+
+			zopeBuffer[1] = self.lastPosition.x;
+			zopeBuffer[2] = self.lastPosition.y;
+
+			zopeBuffer[3] = self.currentRound.x;
+			zopeBuffer[4] = self.currentRound.y;
+
+			zopeBuffer[5] = self.isBallReached;
+			zopeBuffer[6] = self.isBallWinned;
+
+			zopeBuffer[7] = challenge;
+
+			zopeBuffer[8] = desiredDestination.x;
+			zopeBuffer[9] = desiredDestination.y;
  
-			MPI_Isend(&sendBuffer, 5, MPI_INT, fieldInCharge, TAG_PASS_BALL, MPI_COMM_WORLD, &sendRequest);	
+			MPI_Isend(&zopeBuffer, PLAYER_SUMMARY_SIZE, MPI_INT, fieldInCharge, TAG_REPORT_SUMMARY, MPI_COMM_WORLD, &sendRequest);	
 
 
 		} // End of player process
