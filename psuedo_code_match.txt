@@ -57,22 +57,24 @@ else{
 						- Pass the ball to that person
 					- If not, pass the ball to the front for 3 steps.
 
-			The ball will either:
-				- Reach the destination:
-
-				- Miss the destination: 
-					- Goes to 8 feet of the destination
-					- If goes without range of court: put the ball to the center
-
-			The winner pass the new ball location to the field (point-to-point)
-			The winner's field receives the new location of the ball.
-				If the ball reached the destination:
-					- If new location is the basket: 
+			The winner tells the destination to the field-in-charge
+			The field-in-charge receives the destination of the ball
+				- Field calculates the ball location:
+					The ball will eigher:
+						- Reach the destination:
+						- Miss the destination: 
+							- Goes to ramdon location that is within 8 feet of the destination
+							- If goes without range of court: put the ball to the center	
+				- If new location is the basket: 
 						- isScored = true
-						- add score	(based on the distance between new location and initial location)						
+						- add score	(based on the distance between new location and initial location)
 
-			The winner's field pass the new ball location to the other field (point-to-point)
-			The other field receives the new ball location.
+			The winner's field pass the following information to the other field:
+				- new ball location
+				- isScored
+				- teamA's score
+				- teamB's score
+			The other field receives the above information, and updates itself.
 
 	Players sends the following info to their field-in-charge:
 		- initial location
