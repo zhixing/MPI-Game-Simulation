@@ -53,9 +53,9 @@ else{
 				- If the basket is within 25 steps: 
 					- Shoot
 				- If the basket is without 25 steps: 
-					- If there's a teammate within 10 steps:
+					- If there're teammates who are closer to the basket than me 
 						- Pass the ball to that person
-					- If not, do nothing.
+					- If not, pass the ball to the front for 3 steps.
 
 			The ball will either:
 				- Reach the destination:

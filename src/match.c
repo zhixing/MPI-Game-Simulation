@@ -6,6 +6,7 @@
 #include <mpi.h>
 #include <stdio.h>
 #include <stdlib.h>
+#include <math.h>
 
 #define FIELD_LENGTH 128
 #define FIELD_WIDTH 64
@@ -21,8 +22,9 @@
 #define MPI_BUFFER_SIZE 128
 #define MAX_DISTANCE_PER_ROUND 10
 #define MIN_DISTANCE_PER_ROUND 1
-#define RAMDOM_FACTOR 100
+#define RAMDOM_FACTOR 117
 #define MIN_SHOOTING_DISTANCE 26
+#define BALL_MISS_ROLL_RANGE 8
 // SHOULD_OUTPUT_DETAILS: 1: print detailed info. 0: print out brief info.
 #define SHOULD_OUTPUT_DETAILS 0
 
@@ -36,6 +38,7 @@
 #define TAG_UPDATE_LOCATION 6
 #define TAG_EXCHANGE_ALL_LOCATION 7
 #define TAG_TEAMMATES_LOCATIONS 8
+#define TAG_PASS_BALL 9
 
 
 typedef struct{
@@ -60,22 +63,6 @@ typedef struct{
 	int fieldProcess;
 } Ball;
 
-Position getGoal(int currentRound, int player){
-	Position goalAtLeft;
-	Position goalAtRight;
-
-	goalAtLeft.x = 0;
-	goalAtLeft.y = 32;
-	goalAtRight.x = 128;
-	goalAtRight.y = 32;
-
-	if (currentRound < NUM_OF_ROUNDS){
-		return (player < TEAM_SIZE) ? goalAtLeft : goalAtRight;
-	} else{
-		return (player < TEAM_SIZE) ? goalAtRight : goalAtLeft;
-	}
-}
-
 void computeTeammates(int teammates[]){
 	int offSet = 0, m, j;
 
@@ -91,6 +78,70 @@ void computeTeammates(int teammates[]){
 
 	printf("Winner: %d, Teammates: %d %d %d %d \n", winner, teammates[0], teammates[1], teammates[2], teammates[3]);
 	
+}
+
+/*
+* Shoot the ball to new position. The ball may not end up there. And this is determined by the play's skills
+*/
+Position passBallToNewPosition(Position destination, Position source, int shooting){
+	Position result;
+	// Probablity is from 0 to 100
+	double probablity = computeHitProbablity(getDistance(destination, source), shooting);
+
+	// If the probablity is 96, then 96% of the chances will be: the rand is less than 96.
+	int random = rand() % 100;
+	int isHit = random < probablity ? 1 : 0;
+
+	if (!isHit){
+		int rollDistance = getRandomNumberWithinRange(0, BALL_MISS_ROLL_RANGE);
+
+		int rollX = getRandomNumberWithinRange(0, rollDistance);
+		int rollY = rollDistance - rollX;
+
+		int directionX = (rand() % 2) ? 0 : 1;
+		int directionY = (rand() % 2) ? 0 : 1;
+
+		result.x = destination.x + directionX * rollX;
+		result.y = destination.y + directionY * rollY;
+	} else{
+		result = destination;
+	}
+	printf("Passting the ball to (%d, %d), probablity: %f, the ball ended up: (%d, %d)", destination.x, destination.y, result.x, result.y);
+
+	if (getFieldBelongsTo(getFieldBelongsTo) == INVALID_PROCESS){
+		result.x = INITIAL_BALL_POSITION_X;
+		result.y = INITIAL_BALL_POSITION_Y;
+	}
+
+	return result;
+}
+
+/*
+* Return the probablity of hit. Based on the distance and shooting skill.
+*/
+double computeHitProbablity(int d, int s){
+	double v = ( 10 + 90 * s ) / ( 0.5 * d * sqrtf(d) - 0.5 );
+	printf("Probablity: %f", v);
+	return v < 100 ? v : 100;
+}
+
+/*
+* Get the position of the goal based on the currentRound and the rank of the player
+*/
+Position getGoal(int currentRound, int player){
+	Position goalAtLeft;
+	Position goalAtRight;
+
+	goalAtLeft.x = 0;
+	goalAtLeft.y = 32;
+	goalAtRight.x = 128;
+	goalAtRight.y = 32;
+
+	if (currentRound < NUM_OF_ROUNDS){
+		return (player < TEAM_SIZE) ? goalAtRight : goalAtLeft;
+	} else{
+		return (player < TEAM_SIZE) ? goalAtLeft : goalAtRight;
+	}
 }
 
 /*
@@ -144,11 +195,11 @@ int getDistance(Position p, Position q){
 
 /*
 * Return FIELD_LEFT_PROCESS or FIELD_RIGHT_PROCESS
-* Return -1 if out-of-range
+* Return INVALID_PROCESS if out-of-range
 */
 int getFieldBelongsTo(Position p){
 	if (p.x < 0 || p.x > FIELD_LENGTH || p.y < 0 || p.y > FIELD_WIDTH){
-		return -1;
+		return INVALID_PROCESS;
 	}
 	if (p.x < FIELD_WIDTH / 2){
 		return FIELD_LEFT_PROCESS;
@@ -210,6 +261,8 @@ int main(int argc, char *argv[]){
 					x 	x 	| 	x 	x
 
 	*/
+
+	srand(time(NULL) + rank * RAMDOM_FACTOR);
 
 	int currentRound;
 	int isScored = 0;
@@ -469,14 +522,23 @@ int main(int argc, char *argv[]){
 						int index = teammates[m];
 						teammatesLocation[index] = locationRecords[index];
 					}
-
 					// Sends the teammatesLocation to the winner:
 					MPI_Isend(&teammatesLocation, 2 * NUM_OF_PLAYERS, MPI_INT, winner, TAG_TEAMMATES_LOCATIONS, MPI_COMM_WORLD, &sendRequest);
 					
+					// Receive where the winner wants to pass the ball:
+					MPI_Recv(&receiveBuffer, 5, MPI_INT, FIELD_THE_OTHER, TAG_PASS_BALL, MPI_COMM_WORLD, &status);
+					Position newPosition;
+					dstPosition.x = receiveBuffer[0];
+					dstPosition.y = receiveBuffer[1];
+					srcPosition.x = receiveBuffer[2];
+					srcPosition.y = receiveBuffer[3];
+					int shooting = receiveBuffer[4];
+
+					newPosition = passBallToNewPosition(dstPosition, srcPosition, shooting);
+					ball.lastPosition = ball.currentPosition;
+					ball.currentPosition = newPosition;
+
 				}
-
-
-
 			}
 
 		} // End of field process
@@ -538,9 +600,25 @@ int main(int argc, char *argv[]){
 
 				// Shoot the ball if I'm close enough.
 				if(goalDistance <= MIN_SHOOTING_DISTANCE){
+					sendBuffer[0] = goalPosition.x;
+					sendBuffer[1] = goalPosition.y;
+					sendBuffer[2] = self.currentPosition.x;
+					sendBuffer[3] = self.currentPosition.y;
+					sendBuffer[4] = self.shooting;
+					MPI_Isend(&sendBuffer, 5, MPI_INT, fieldInCharge, TAG_PASS_BALL, MPI_COMM_WORLD, &sendRequest);
+				} 
 
-				} else{
+				// Otherwise, pass the ball
+				else{
+					// If there're teammates who are closer to the basket than me 
+					// Pass the ball to that person
+					if (){
 
+					}
+					// If not, pass the ball to the front for 3 steps.
+					else{
+
+					}
 				}
 
 			} // End of "if I'm winner"
