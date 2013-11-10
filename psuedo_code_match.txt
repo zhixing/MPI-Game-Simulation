@@ -76,6 +76,8 @@ else{
 				- teamB's score
 			The other field receives the above information, and updates itself.
 
+			The fields sends isScored to all its players.
+
 	Players sends the following info to their field-in-charge:
 		- initial location
 		- final location
