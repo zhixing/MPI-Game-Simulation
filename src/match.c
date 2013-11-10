@@ -22,6 +22,7 @@
 #define MAX_DISTANCE_PER_ROUND 10
 #define MIN_DISTANCE_PER_ROUND 1
 #define RAMDOM_FACTOR 100
+#define MIN_SHOOTING_DISTANCE 26
 // SHOULD_OUTPUT_DETAILS: 1: print detailed info. 0: print out brief info.
 #define SHOULD_OUTPUT_DETAILS 0
 
@@ -34,6 +35,7 @@
 #define TAG_BROADCAST_WINNER 5
 #define TAG_UPDATE_LOCATION 6
 #define TAG_EXCHANGE_ALL_LOCATION 7
+#define TAG_TEAMMATES_LOCATIONS 8
 
 
 typedef struct{
@@ -57,6 +59,39 @@ typedef struct{
 	Position lastPosition;
 	int fieldProcess;
 } Ball;
+
+Position getGoal(int currentRound, int player){
+	Position goalAtLeft;
+	Position goalAtRight;
+
+	goalAtLeft.x = 0;
+	goalAtLeft.y = 32;
+	goalAtRight.x = 128;
+	goalAtRight.y = 32;
+
+	if (currentRound < NUM_OF_ROUNDS){
+		return (player < TEAM_SIZE) ? goalAtLeft : goalAtRight;
+	} else{
+		return (player < TEAM_SIZE) ? goalAtRight : goalAtLeft;
+	}
+}
+
+void computeTeammates(int teammates[]){
+	int offSet = 0, m, j;
+
+	if (winner >= TEAM_SIZE){
+		offSet = TEAM_SIZE;
+	}
+
+	for (m = 0; m < TEAM_SIZE; m++){
+		if (m + offSet != winner){
+			teammates[j++] = m;
+		}
+	}
+
+	printf("Winner: %d, Teammates: %d %d %d %d \n", winner, teammates[0], teammates[1], teammates[2], teammates[3]);
+	
+}
 
 /*
 * Run towards the ball.
@@ -400,7 +435,7 @@ int main(int argc, char *argv[]){
 				otherPositions[index] = locationRecords[index];
 			}
 
-			// Assign value:
+			// Assign value back:
 			for (m = 0; m < NUM_OF_PLAYERS; m++){
 				locationRecords[m] = otherPositions[m];
 			}
@@ -413,7 +448,32 @@ int main(int argc, char *argv[]){
 
 
 			if (winner != INVALID_PROCESS){
-				
+
+				// See if I'm in charge of the winner:
+				int isWinnerInMyField = 0;
+				for (m = 0; m < NUM_OF_PLAYERS; m++){
+					if (playersInThisField[i] == winner){
+						isWinnerInMyField = 1;
+					}
+				}
+
+				// If the winner is in my field, sends the location of the winner's teammates:
+				if (isWinnerInMyField){
+
+					// Compute the teammates' location of the winner
+					int teammates[TEAM_SIZE - 1];
+					computeTeammates(teammates);
+					
+					Position teammatesLocation[NUM_OF_PLAYERS];
+					for (m = 0; m < TEAM_SIZE - 1; m++){
+						int index = teammates[m];
+						teammatesLocation[index] = locationRecords[index];
+					}
+
+					// Sends the teammatesLocation to the winner:
+					MPI_Isend(&teammatesLocation, 2 * NUM_OF_PLAYERS, MPI_INT, winner, TAG_TEAMMATES_LOCATIONS, MPI_COMM_WORLD, &sendRequest);
+					
+				}
 
 
 
@@ -423,6 +483,8 @@ int main(int argc, char *argv[]){
 
 		// Player process:
 		else{
+			int m;
+
 			self.lastPosition = self.currentPosition;
 			self.isBallReached = 0;
 			self.isBallWinned = 0;
@@ -454,15 +516,34 @@ int main(int argc, char *argv[]){
 			zopeBuffer[1] = self.currentPosition.y;
 			MPI_Isend(&zopeBuffer, 2, MPI_INT, fieldInCharge, TAG_UPDATE_LOCATION, MPI_COMM_WORLD, &sendRequest);
 
+			// If there's a winner, AND the winner is me. YAY!
+			if (winner != INVALID_PROCESS && winner == rank){
 
-			// If there's a winner:
-			if (winner != INVALID_PROCESS){
+				// Receives the teammates' locations from the field in charge:
+				MPI_Recv(&receiveBuffer, 2 * NUM_OF_PLAYERS, MPI_INT, fieldInCharge, TAG_TEAMMATES_LOCATIONS, MPI_COMM_WORLD, &status);
+				
+				Position teammatesLocation[NUM_OF_PLAYERS];
+				for (m = 0; m < NUM_OF_PLAYERS; m++){
+					Position pos;
+					pos.x = receiveBuffer[m * 2];
+					pos.y = receiveBuffer[m * 2 + 1];
+					teammatesLocation[m] = pos;
+				}
 
+				int teammates[TEAM_SIZE];
+				computeTeammates(teammates);
 
+				Position goalPosition = getOfGoal(currentRound, rank);
+				int goalDistance = getDistance(goalPosition, self.currentPosition);
 
+				// Shoot the ball if I'm close enough.
+				if(goalDistance <= MIN_SHOOTING_DISTANCE){
 
+				} else{
 
-			}
+				}
+
+			} // End of "if I'm winner"
 
 		} // End of player process
 
