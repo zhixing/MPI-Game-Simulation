@@ -121,7 +121,7 @@ Position passBallToNewPosition(Position destination, Position source, int shooti
 	}
 	printf("Passting the ball to (%d, %d), probablity: %f, the ball ended up: (%d, %d)", destination.x, destination.y, result.x, result.y);
 
-	if (getFieldBelongsTo(getFieldBelongsTo) == INVALID_PROCESS){
+	if (getFieldBelongsTo(result) == INVALID_PROCESS){
 		result.x = INITIAL_BALL_POSITION_X;
 		result.y = INITIAL_BALL_POSITION_Y;
 	}
@@ -613,7 +613,6 @@ int main(int argc, char *argv[]){
 			} // End of "if there's a winner"
 
 			// Gather's summary from players:
-			// initial location, final location, reached?, kicked?, ball challenge, shoot target location. (-1, -1) if didn't reach/win
 			int playerSummary[PLAYER_SUMMARY_SIZE * NUM_OF_PLAYERS]; // 10 * 10
 			for (m = 0; m < numPlayersInThisField; m++){
 				int index = playersInThisField[m];
@@ -625,10 +624,40 @@ int main(int argc, char *argv[]){
 				}
 			}
 
-			for ()
+			// Field 1 sends all the info to Field 0:
+			if (rank == FIELD_RIGHT_PROCESS){
+				MPI_Isend(&playerSummary, PLAYER_SUMMARY_SIZE * NUM_OF_PLAYERS, MPI_INT, FIELD_LEFT_PROCESS, TAG_EXCHANGE_SUMMARY, MPI_COMM_WORLD, &sendRequest);
+			}
 
+			// Field 0 receives all the info from Field 1:
+			else if (rank == FIELD_LEFT_PROCESS){
+				MPI_Recv(&receiveBuffer, PLAYER_SUMMARY_SIZE * NUM_OF_PLAYERS, MPI_INT, FIELD_RIGHT_PROCESS, TAG_EXCHANGE_SUMMARY, MPI_COMM_WORLD, &status);
+				
+				// Merge with self:
+				for (m = 0; m < numPlayersInThisField; m++){
+					int index = playersInThisField[m];
+					int p;
+					for (p = 0; p < PLAYER_SUMMARY_SIZE; p++){
+						receiveBuffer[index * PLAYER_SUMMARY_SIZE + p] = playerSummary[index * PLAYER_SUMMARY_SIZE + p];
+					}
+				}
 
+				// Printout:
+				printf("Round: %d\n", currentRound);
+				printf("Scores: A: %d, B: %d\n", teamAScore, teamBScore);
+				printf("Ball: (%d, %d) ==> (%d, %d)\n", ball.lastPosition.x, ball.lastPosition.y, ball.currentPosition.x, ball.currentPosition.y);
 
+				// rank, initial location, final location, reached?, kicked?, ball challenge, shoot target location. (-1, -1) if didn't reach/win
+				for (m = 0; m < NUM_OF_PLAYERS; m++){
+					int index = m * PLAYER_SUMMARY_SIZE;
+					printf("\nPlayer: %d\n", receiveBuffer[index]);
+					printf("%dLocation: (%d, %d) ==> (%d, %d)\n", receiveBuffer[index + 1], receiveBuffer[index + 2], receiveBuffer[index + 3], receiveBuffer[index + 4]);
+					printf("Reached? %d\n", receiveBuffer[index + 5]);
+					printf("Kicked? %d\n", receiveBuffer[index + 6]);
+					printf("Ball Challenge: %d\n", receiveBuffer[index + 7]);
+					printf("Shoot target: (%d, %d)\n", receiveBuffer[index + 8], receiveBuffer[index + 9]);
+				}
+			}
 		} // End of field process
 
 		// Player process:
