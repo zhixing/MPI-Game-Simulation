@@ -239,20 +239,38 @@ int getFieldBelongsTo(Position p){
 
 /*
 * Return the index of the max in array.
+* If multiple index contains the max value, a ramdon index of them will be returned.
+* the arr[] size must be smaller than NUM_OF_PLAYERS
 */
 int getMaxInArray(int arr[], int size){
 	int i;
 	int max = arr[0];
 	int maxIndex = 0;
+
+	int duplicateCount = 0;
+	int duplicateIndex[NUM_OF_PLAYERS];
 	if (size <= 1){
 		return 0;
 	}
+
 	for (i = 1; i < size; i++){
 		if (arr[i] > max){
 			max = arr[i];
 			maxIndex = i;
 		}
 	}
+
+	for (i = 1; i < size; i++){
+		if (arr[i] == max){
+			duplicateIndex[duplicateCount++] = i;
+		}
+	}
+
+	if (duplicateCount > 0){
+		int choice = getRandomNumberWithinRange(0, duplicateCount - 1);
+		maxIndex = duplicateIndex[choice];
+	}
+
 	return maxIndex;
 }
 
