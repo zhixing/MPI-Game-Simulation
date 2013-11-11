@@ -293,8 +293,8 @@ int main(int argc, char *argv[]){
 	MPI_Comm_rank(MPI_COMM_WORLD, &rank);
 
 	int skillSet[NUM_OF_PLAYERS][NUM_OF_SKILLS] = {
-		{5, 5, 5}, {5, 4, 6}, {5, 5, 5}, {5, 2, 8}, {5, 5, 5},
-		{5, 5, 5}, {5, 6, 4}, {5, 5, 5}, {5, 8, 2}, {5, 5, 5}
+		{7, 3, 5}, {5, 4, 6}, {5, 2, 8}, {5, 5, 5}, {5, 5, 5}, 
+		{7, 5, 3}, {5, 6, 4}, {5, 8, 2}, {5, 5, 5}, {5, 5, 5}
 	};
 	
 	int initialLocations[NUM_OF_PLAYERS][NUM_OF_SKILLS] = {
