@@ -348,7 +348,7 @@ int main(int argc, char *argv[]){
 
 		MPI_Barrier(MPI_COMM_WORLD);
 
-		if (currentRound == 0 || isScored == 1){
+		if (currentRound == 0 || isScored == 1 || currentRound == NUM_OF_ROUNDS){
 			isScored = 0;
 			
 			// Field process:
